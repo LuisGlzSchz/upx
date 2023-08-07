@@ -16,7 +16,7 @@ body{
     color:  rgb(28, 32, 63,0.6);
 }
 section {
-    padding: 60px 0;
+    padding: 75px 5px !important;
     overflow: hidden;
   }
   
@@ -232,7 +232,7 @@ contact .info-item {
 
 .custom-padding {
     /* padding: 76px; */
-    padding: 100px;
+    /* padding: 100px; */
 }
 
 /* .custom-margin{
@@ -598,7 +598,7 @@ contact .info-item {
     .image-container {
       display: inline-block;
     }
-    
+
     .accordion-list {
         text-align: left;
         display: block;
