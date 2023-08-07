@@ -2,24 +2,26 @@
     --primary-color: #1c203f;
     --section-bg: #151F3C;
     --secondary-color: #31386e;
-    --translucidPrimary-color:rgb(28, 32, 63,.9);
+    --translucidPrimary-color: rgb(28, 32, 63, .9);
     --accent-color: #b9ce24;
     --bg-color: #f3f3f3;
-    --body-bg-color: rgb(28, 32, 63,0.3);
+    --body-bg-color: rgb(28, 32, 63, 0.3);
     --blueSky-color: #0071BC;
     --bg-secondary-color: rgba(187, 207, 36, 0.8);
     --section-bg-color: #004e74;
-  }
-body{
+}
+
+body {
     background-color: var(--bg-color);
     color: var(--primary-color);
-    color:  rgb(28, 32, 63,0.6);
+    /* color:  rgb(28, 32, 63,0.6); */
 }
+
 section {
     padding: 75px 5px !important;
     overflow: hidden;
-  }
-  
+}
+
 
 /*NavBar*/
 .navbar-nav {
@@ -38,16 +40,18 @@ section {
 
 
 /*Ubicacion*/
-#ubicacion img{
+#ubicacion img {
     width: 2rem;
     height: 2rem;
 }
-.ubicacion-section{
+
+.ubicacion-section {
     display: flex;
     flex-wrap: wrap;
 }
+
 .d-flex {
-    display: flex!important;
+    display: flex !important;
 }
 
 
@@ -62,15 +66,17 @@ contact .info-item {
 
 
 
-.icono-custom{
+.icono-custom {
     width: 4px;
     height: 4px;
 }
-.contact-contaier{
+
+.contact-contaier {
     background-color: var(--primary-color);
     border-radius: 1.2rem;
 }
-.contact-contaier .domicilio{
+
+.contact-contaier .domicilio {
     background-color: var(--bg-color);
     color: var(--primary-color);
     border-radius: 1.2rem;
@@ -78,33 +84,36 @@ contact .info-item {
 
 }
 
-.contact-contaier .domicilio p{
+.contact-contaier .domicilio p {
     text-align: justify;
     padding-left: 5px;
 }
 
-.contact-contaier .email p{
-    padding-left: 5px;
-}
-.contact-contaier .telefono p{
+.contact-contaier .email p {
     padding-left: 5px;
 }
 
-.contact-contaier .email{
+.contact-contaier .telefono p {
+    padding-left: 5px;
+}
+
+.contact-contaier .email {
     background-color: var(--bg-color);
     color: var(--primary-color);
     border-radius: 1.2rem;
     padding: 10px;
 
 }
-.contact-contaier .telefono{
+
+.contact-contaier .telefono {
     background-color: var(--bg-color);
     color: var(--primary-color);
     border-radius: 1.2rem;
     padding: 10px;
-   
+
 }
-.leyenda-ubicacion{
+
+.leyenda-ubicacion {
     background-color: var(--blueSky-color);
     border-radius: 1.2rem;
     display: grid;
@@ -115,15 +124,16 @@ contact .info-item {
 
 
 
-#title-carrerasSec{
+#title-carrerasSec {
     color: var(--primary-color);
 }
-.btn-upx{
+
+.btn-upx {
     background-color: var(--primary-color);
     color: white;
 }
 
-.btn-upx:hover{
+.btn-upx:hover {
     background-color: var(--secondary-color);
 }
 
@@ -139,12 +149,12 @@ contact .info-item {
     border-color: var(--accent-color);
 }
 
-.text-login{
-    color:var(--primary-color) !important;
+.text-login {
+    color: var(--primary-color) !important;
     font-weight: 500;
 }
 
-.text-login:hover{
+.text-login:hover {
     text-decoration: underline 2px;
 }
 
@@ -160,7 +170,7 @@ contact .info-item {
     margin: auto;
     color: var(--primary-color);
     margin-bottom: 15%;
-    
+
 }
 
 .tituloMain {
@@ -171,7 +181,7 @@ contact .info-item {
     margin-bottom: 15px; */
 }
 
-.subTituloMain::before{
+.subTituloMain::before {
     content: "";
     display: block;
     width: 35%;
@@ -184,13 +194,13 @@ contact .info-item {
     margin-bottom: 5px;
 }
 
-.subTituloMain{
+.subTituloMain {
     text-align: center;
     color: var(--primary-color);
 }
 
 
-.subTitulo::before{
+.subTitulo::before {
     content: "";
     display: block;
     width: 15%;
@@ -203,37 +213,36 @@ contact .info-item {
     /* margin-bottom: 15%; */
 }
 
-.subTitulo{
+.subTitulo {
     text-align: center;
     color: var(--primary-color);
 }
 
 /* Inicio nosotros */
-.textoNosotros{
+.textoNosotros {
     padding: 0px 50px;
     text-align: justify;
     overflow: hidden;
 }
 
 
-#nosotros{
+#nosotros {
     /* background-color: rgb(28, 32, 63,0.8); */
     /* margin-top: 20%; */
-
-
 }
 
-.content-bg{
+.content-bg {
     padding: 100px;
     background-color: white;
     box-shadow: #000;
     border-radius: 1.2rem;
 }
 
+/* 
 .custom-padding {
-    /* padding: 76px; */
-    /* padding: 100px; */
-}
+    padding: 76px; 
+     padding: 100px;
+} */
 
 /* .custom-margin{
     margin-bottom: 23%;
@@ -244,33 +253,36 @@ contact .info-item {
 /* fin Nosotros */
 
 /* Modal */
-.modal-header{
+.modal-header {
     background-color: var(--primary-color);
     color: white;
 }
-.modal-body{
-    background-color: var(--bg-color);
-}
-.modal-footer{
+
+.modal-body {
     background-color: var(--bg-color);
 }
 
-#header img{
+.modal-footer {
+    background-color: var(--bg-color);
+}
+
+#header img {
     width: 50px;
-  
+
 }
 
 #header {
     text-transform: uppercase;
 }
-#logo-nav{
+
+#logo-nav {
     padding-left: 5.5rem;
 }
 
-#header.sticky-top{
+#header.sticky-top {
 
-    background-color: var(--primary-color) ;
-    color: #000 ;
+    background-color: var(--primary-color);
+    color: #000;
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
     height: 10%;
 
@@ -278,7 +290,7 @@ contact .info-item {
 
 /* main */
 
-#main .carousel-inner img{
+#main .carousel-inner img {
     max-height: 70vh;
     object-fit: cover;
     /* filter: grayscale(70%); */
@@ -288,7 +300,7 @@ contact .info-item {
     position: relative;
 }
 
-#carousel .overlay{
+#carousel .overlay {
     z-index: 1;
     position: absolute;
     top: 0;
@@ -296,28 +308,30 @@ contact .info-item {
     left: 0;
     right: 0;
     background-color: rgb(0, 0, 0, 0.5);
-    color:white;
+    color: white;
 
 }
+
 #carousel .overlay .container,
-#carousel .overlay .row{
+#carousel .overlay .row {
     height: 100%;
 }
 
 
 /* aspirantes */
 
- #aspirantes img{
+#aspirantes img {
     max-width: 75%;
-} 
+}
 
 /* Becas */
 
-#beca img{
+#beca img {
     max-width: 75%;
-} 
+}
+
 /* Costos */
-#costos img{
+#costos img {
     max-width: 75%;
 }
 
@@ -331,7 +345,7 @@ contact .info-item {
 .accordion {
     --bs-accordion-color: var(--bg-color);
     --bs-accordion-bg: var(--translucidPrimary-color);
-    --bs-accordion-transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,border-radius 0.15s ease;
+    --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
     --bs-accordion-border-color: var(--bg-color);
     --bs-accordion-border-width: var(--bs-border-width);
     --bs-accordion-border-radius: var(--bs-border-radius);
@@ -350,10 +364,34 @@ contact .info-item {
     --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(187, 207, 36, 0.5);
     --bs-accordion-body-padding-x: 1.25rem;
     --bs-accordion-body-padding-y: 1rem;
-    --bs-accordion-active-color: var(--primary-color); 
+    --bs-accordion-active-color: var(--primary-color);
     --bs-accordion-active-bg: var(--accent-color);
     /* --bs-accordion-btn-active-icon-color: red; */
-} 
+}
+
+/* Cambiar los colores del texto del acordeón */
+.accordion {
+    --bs-accordion-color: white;
+    /* Cambia el color del texto del encabezado */
+    --bs-accordion-bg: var(--translucidPrimary-color);
+}
+
+/* Cambiar los colores del fondo del cuerpo del acordeón */
+.accordion-body {
+    color: black;
+    /* Cambia el color del texto del cuerpo */
+    background-color: white;
+    /* Cambia el color de fondo del cuerpo */
+}
+
+/* Cambiar los colores de los encabezados activos */
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    /* Cambia el color del texto del encabezado activo */
+    background-color: var(--bs-accordion-active-bg);
+    /* Cambia el color de fondo del encabezado activo */
+}
+
 
 /* btn close*/
 .btn-close {
@@ -393,61 +431,67 @@ contact .info-item {
     -moz-appearance: none;
     appearance: none;
     border-radius: var(--bs-border-radius);
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 
-
-
-/* footer */
-#footer{
-    background-color:var(--primary-color);
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+    background-color: var(--primary-color);
 }
 
-#footer a{
+#footer a {
     color: white;
     text-decoration: none;
 }
-#footer a:hover{
+
+#footer a:hover {
     color: var(--accent-color);
     text-decoration: none;
 }
-/* nuevo footer */
-/*:::::Pie de Pagina*/
-.pie-pagina{
+
+.pie-pagina {
     width: 100%;
     /* background-color: #0a141d; */
     background-color: var(--primary-color);
 }
-.pie-pagina .grupo-1{
+
+.pie-pagina .grupo-1 {
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap:50px;
+    grid-gap: 50px;
     padding: 45px 0px;
 }
-.pie-pagina .grupo-1 .box figure{
+
+.pie-pagina .grupo-1 .box figure {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.pie-pagina .grupo-1 .box figure img{
+
+.pie-pagina .grupo-1 .box figure img {
     width: 250px;
 }
-.pie-pagina .grupo-1 .box h2{
+
+.pie-pagina .grupo-1 .box h2 {
     color: #fff;
     margin-bottom: 25px;
     font-size: 20px;
 }
-.pie-pagina .grupo-1 .box p{
+
+.pie-pagina .grupo-1 .box p {
     color: #efefef;
     margin-bottom: 10px;
 }
-.pie-pagina .grupo-1 .red-social a{
+
+.pie-pagina .grupo-1 .red-social a {
     display: inline-block;
     text-decoration: none;
     width: 45px;
@@ -459,28 +503,33 @@ contact .info-item {
     text-align: center;
     transition: all 300ms ease;
 }
-.pie-pagina .grupo-1 .red-social a:hover{
+
+.pie-pagina .grupo-1 .red-social a:hover {
     color: aqua;
 }
-.pie-pagina .grupo-2{
+
+.pie-pagina .grupo-2 {
     background-color: #0a1a2a;
     padding: 15px 10px;
     text-align: center;
     color: #fff;
 }
-.pie-pagina .grupo-2 small{
+
+.pie-pagina .grupo-2 small {
     font-size: 15px;
 }
-@media screen and (max-width:800px){
-    .pie-pagina .grupo-1{
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
+        grid-gap: 30px;
         padding: 35px 0px;
     }
 }
+
 /*footer text*/
-.test{
+.text-justify {
     text-align: justify;
 }
 
@@ -496,22 +545,22 @@ contact .info-item {
     padding: 20px;
     border-radius: 10px 0 0 10px;
     box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contact .info-item {
+}
+
+.contact .info-item {
     width: 100%;
     background-color: var(--blueSky-color);
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px;
     color: #fff;
-  }
-  
-  .contact .info-item:last-child {
+}
+
+.contact .info-item:last-child {
     margin-bottom: 0;
-  }
-  
-  /* .contact .info-item i {
+}
+
+/* .contact .info-item i {
     font-size: 20px;
     color: #fff;
     float: left;
@@ -526,84 +575,118 @@ contact .info-item {
     margin-right: 15px;
   }
    */
-  .contact .info-item h4 {
+.contact .info-item h4 {
     padding: 0;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 5px;
-  }
-  
-  .contact .info-item p {
+}
+
+.contact .info-item p {
     padding: 0;
     margin-bottom: 0;
     font-size: 14px;
-  }
-  
-  /* .contact .info-item:hover i {
+}
+
+/* .contact .info-item:hover i {
     background: #fff;
     color: var(--color-primary);
   } */
-.section-bg-blue{
+.section-bg-blue {
     background-color: var(--section-bg);
     color: var(--bg-color);
 }
-.section-bg-blue h2{
+
+.section-bg-blue h2 {
     color: var(--bg-color);
 }
-.section-bg-blue h1{
+
+.section-bg-blue h1 {
     color: var(--bg-color);
 }
-.section-bg-blue h4{
+
+.section-bg-blue h4 {
     color: var(--bg-color);
-} 
+}
+
 .image-container {
     display: inline-block;
     background-color: var(--bg-color);
     border-radius: 1.5rem;
 }
-.lista-costos ul{
+
+.lista-costos ul {
     font-weight: bolder;
     font-size: large;
 }
-.lista-costos li{
+
+.lista-costos li {
     font-size: large;
 }
+
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
     [data-aos-delay] {
-      transition-delay: 0 !important;
+        transition-delay: 0 !important;
     }
-  }
-/* Agregar estilos para centrar la lista en dispositivos pequeños */
+}
+
+/*--------------------------------------------------------------
+# Responsive small devices
+--------------------------------------------------------------*/
 .list-container {
     text-align: center;
-  }
-  
-  #listaAspirantes {
+}
+
+#listaAspirantes {
     text-align: left;
-  }
-  
-  #listaAspirantes li {
+}
+
+#listaAspirantes li {
     list-style: disc;
     margin-left: 20px;
-  }
-/* Agregar estilos para centrar el contenido en dispositivos pequeños */
+}
+
 @media (max-width: 767px) {
     .row {
-      text-align: center;
+        text-align: center;
     }
-  
+
     .image-container {
-      display: inline-block;
+        display: inline-block;
     }
 
     .accordion-list {
         text-align: left;
         display: block;
-      }
     }
-  
-  
-    
+}
+
+/*--------------------------------------------------------------
+# Table
+--------------------------------------------------------------*/
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: var(--bs-table-striped-bg);
+    color: var(--secondary-color) !important;
+}
+
+.table {
+    --bs-table-color: var(--secondary-color);
+    --bs-table-bg: transparent;
+    --bs-table-border-color: var(--bs-border-color);
+    --bs-table-accent-bg: transparent;
+    --bs-table-striped-color: var(--bs-body-color);
+    --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+    --bs-table-active-color: var(--bs-body-color);
+    --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+    --bs-table-hover-color: var(--bs-body-color);
+    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+    width: 100%;
+    margin-bottom: 1rem;
+    color: var(--bs-table-color);
+    vertical-align: top;
+    border-color: var(--bs-table-border-color);
+}
