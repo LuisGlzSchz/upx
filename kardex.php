@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (!isset($_SESSION['usuario'])) {
+    header('location: index.php'); // Redirigir si no hay sesión activa
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +20,8 @@
             </div>
             <div class="card-body">
                 <h5 class="card-title">Información del Estudiante</h5>
-                <p class="card-text">Nombre: Luis González</p>
+                <p class="card-text">Matricula: <?php echo $_SESSION['usuario'] ?></p>
+                <p class="card-text">Carrera: </p>
                 <p class="card-text">Carrera: Ingeniería Informática</p>
                 <h5 class="card-title mt-4">Materias</h5>
                 <table class="table table-striped">
@@ -28,7 +35,7 @@
                         <tr>
                             <td>Matemáticas</td>
                             <td>90</td>
-                        </tr>
+                        </tr>   
                         <tr>
                             <td>Programación</td>
                             <td>85</td>
