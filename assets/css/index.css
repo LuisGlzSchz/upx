@@ -336,11 +336,6 @@ contact .info-item {
     max-width: 75%;
 }
 
-
-
-
-
-
 /* Accordeon */
 
 .accordion {
@@ -506,7 +501,7 @@ contact .info-item {
 }
 
 .pie-pagina .grupo-1 .red-social a:hover {
-    color: aqua;
+    color: var(--accent-color);
 }
 
 .pie-pagina .grupo-2 {
@@ -801,28 +796,33 @@ contact .info-item {
     padding: 8px 15px;
     border-radius: 20px;
 }
-/* Media query para dispositivos pequeños  */
+
+.grid-center{
+    display: grid;
+    place-items: center;
+}
+
 @media (max-width: 767px) {
     .form_main {
-        padding: 15px; /* Ajusta el padding para dispositivos pequeños */
+        padding: 15px;
     }
 
     .inputField {
-        font-size: 1em; /* Ajusta el tamaño de fuente para dispositivos pequeños */
+        font-size: 1em; 
     }
 }
 
-/* Media query para dispositivos medianos  */
+
 @media (min-width: 768px) and (max-width: 991px) {
     .form_main {
-        width: 80%; /* Ajusta el ancho para dispositivos medianos */
+        width: 80%; 
     }
 }
 
-/* Media query para dispositivos grandes */
+
 @media (min-width: 992px) {
     .form_main {
-        width: 60%; /* Ajusta el ancho para dispositivos grandes */
+        width: 60%; 
     }
 }
 
