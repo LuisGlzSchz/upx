@@ -22,6 +22,28 @@ section {
     overflow: hidden;
 }
 
+.custom-card {
+    border: 1px solid #b9ce24;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 560px;
+    margin: auto;
+    padding: .25rem;
+}
+
+.bg-green{
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border-radius: 1.5rem;
+    padding: 1rem;
+    font-weight: 600;
+}
+.container-rounded{
+    border-radius: 1.5rem;
+    font-weight: 400;
+}
+
+
 
 /*NavBar*/
 .navbar-nav {
@@ -49,9 +71,11 @@ section {
     display: flex;
     flex-wrap: wrap;
 }
-.padding-section{
+
+.padding-section {
     padding-top: 10rem;
 }
+
 .d-flex {
     display: flex !important;
 }
@@ -122,10 +146,6 @@ contact .info-item {
     place-items: center;
 }
 
-
-
-
-
 #title-carrerasSec {
     color: var(--primary-color);
 }
@@ -147,6 +167,19 @@ contact .info-item {
 
 .btn-carrera.btn:hover {
     color: white;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+
+.btn-posgrado.btn {
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+    border-color: var(--bg-color);
+}
+
+.btn-posgrado.btn:hover {
+    color: var(--bg-color);
     background-color: var(--accent-color);
     border-color: var(--accent-color);
 }
@@ -218,6 +251,7 @@ contact .info-item {
 .subTitulo {
     text-align: center;
     color: var(--primary-color);
+    text-transform: uppercase;
 }
 
 /* Inicio nosotros */
@@ -225,6 +259,7 @@ contact .info-item {
     padding: 0px 50px;
     text-align: justify;
     overflow: hidden;
+    font-size: 1.2rem;
 }
 
 
@@ -240,19 +275,6 @@ contact .info-item {
     border-radius: 1.2rem;
 }
 
-/* 
-.custom-padding {
-    padding: 76px; 
-     padding: 100px;
-} */
-
-/* .custom-margin{
-    margin-bottom: 23%;
-} */
-
-
-
-/* fin Nosotros */
 
 /* Modal */
 .modal-header {
@@ -295,7 +317,7 @@ contact .info-item {
 #main .carousel-inner img {
     max-height: 70vh;
     object-fit: cover;
-    /* filter: grayscale(70%); */
+  
 }
 
 #carousel {
@@ -336,6 +358,13 @@ contact .info-item {
     max-width: 75%;
 }
 
+@media (max-width: 1300px){
+    #costos img {
+        max-width: 95%;
+    }
+}
+
+
 /* Accordeon */
 
 .accordion {
@@ -349,7 +378,6 @@ contact .info-item {
     --bs-accordion-btn-padding-x: 1.25rem;
     --bs-accordion-btn-padding-y: 1rem;
     --bs-accordion-btn-color: white solid white;
-    /* --bs-accordion-btn-bg: var(--bs-accordion-bg); */
     --bs-accordion-btn-bg: var(--primary-color);
     --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e);
     --bs-accordion-btn-icon-width: 1.25rem;
@@ -362,30 +390,27 @@ contact .info-item {
     --bs-accordion-body-padding-y: 1rem;
     --bs-accordion-active-color: var(--primary-color);
     --bs-accordion-active-bg: var(--accent-color);
-    /* --bs-accordion-btn-active-icon-color: red; */
+
 }
 
-/* Cambiar los colores del texto del acordeón */
+
 .accordion {
     --bs-accordion-color: white;
-    /* Cambia el color del texto del encabezado */
     --bs-accordion-bg: var(--translucidPrimary-color);
 }
 
-/* Cambiar los colores del fondo del cuerpo del acordeón */
+
 .accordion-body {
     color: black;
-    /* Cambia el color del texto del cuerpo */
     background-color: white;
-    /* Cambia el color de fondo del cuerpo */
+  
 }
 
-/* Cambiar los colores de los encabezados activos */
+
 .accordion-button:not(.collapsed) {
     color: var(--bs-accordion-active-color);
-    /* Cambia el color del texto del encabezado activo */
     background-color: var(--bs-accordion-active-bg);
-    /* Cambia el color de fondo del encabezado activo */
+
 }
 
 
@@ -432,9 +457,7 @@ contact .info-item {
 }
 
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+
 #footer {
     background-color: var(--primary-color);
 }
@@ -621,18 +644,14 @@ contact .info-item {
     font-size: large;
 }
 
-/*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
+
 @media screen and (max-width: 768px) {
     [data-aos-delay] {
         transition-delay: 0 !important;
     }
 }
 
-/*--------------------------------------------------------------
-# Responsive small devices
---------------------------------------------------------------*/
+
 .list-container {
     text-align: center;
 }
@@ -656,11 +675,10 @@ contact .info-item {
         text-align: left;
         display: block;
     }
+
 }
 
-/*--------------------------------------------------------------
-# Table
---------------------------------------------------------------*/
+
 
 .table-striped>tbody>tr:nth-of-type(odd)>* {
     --bs-table-accent-bg: var(--bs-table-striped-bg);
@@ -685,11 +703,6 @@ contact .info-item {
     border-color: var(--bs-table-border-color);
 }
 
-
-
-/*--------------------------------------------------------------
-# Login
---------------------------------------------------------------*/
 
 
 .form_main {
@@ -795,7 +808,118 @@ contact .info-item {
     border-radius: 20px;
 }
 
-.grid-center{
+.grid-center {
     display: grid;
     place-items: center;
+}
+
+.card-posgrados {
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-title-color: ;
+    --bs-card-subtitle-color: ;
+    --bs-card-border-width: var(--bs-border-width);
+    --bs-card-border-color: var(--bs-border-color-translucent);
+    --bs-card-border-radius: var(--bs-border-radius);
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: var(--primary-color);
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--bs-card-height);
+    color: var(--bg-color);
+    word-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border-radius: var(--bs-card-border-radius);
+}
+
+.social-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-buttons #main-btn {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.social-buttons #main-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.social-buttons #extra-buttons {
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.social-buttons #extra-buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.social-buttons .btn-facebook {
+    background-color: #3b5998;
+}
+
+.social-buttons .btn-instagram {
+    background-color: #e4405f;
+}
+
+.social-buttons .btn-youtube {
+    background-color: #ff0000;
+}
+
+.social-buttons .btn-whatsapp {
+    background-color: #25D366;
+}
+
+.social-buttons a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 576px){
+    #social{
+        display: none;
+    }
 }

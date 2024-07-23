@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>UPX</title>
   <link rel="shortcut icon" href="assets/images/UPX-1.webp">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/index.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -20,7 +22,8 @@
   <nav id="header" class="navbar navbar-expand-lg bg-body-tertiary sticky-top" data-bs-spy="scroll">
     <div class="container-fluid">
       <a id="logo-nav" class="navbar-brand" href="#"><img src="assets/images/UPX-1.webp" alt="UPX">UPX</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -28,9 +31,19 @@
           <li id="nosotrosNav" class="nav-item d-none d-md-block">
             <a class="nav-link " href="#nosotros">Nosotros</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#carreras">Carreras</a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Oferta Educativa
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#carreras">Licenciaturas</a></li>
+              <li><a class="dropdown-item" href="#posgrados">Posgrados</a></li>
+            </ul>
           </li>
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Informacion general
@@ -41,16 +54,29 @@
               <li><a class="dropdown-item" href="#costos">Costos</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#ubicacion">Ubicación</a>
-          </li>
+          
           <!-- <li class="nav-item">
             <a class="nav-link" href="#galeria">Galería</a>
           </li> -->
 
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link text-login" href="login.html" target="_blank">Login</a>
+          </li> -->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Kiosco
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://ferozo.email/" target="_blank" rel="noopener noreferrer">E-Mail</a></li>
+              <li><a class="dropdown-item" href="http://dexor.eastus.cloudapp.azure.com/login" target="_blank" rel="noopener noreferrer">Sistema</a></li>
+            </ul>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#ubicacion">Ubicación</a>
+          </li>
+
         </ul>
       </div>
     </div>
@@ -73,7 +99,7 @@
             <div class="row aling-items-center">
               <div class="col-md-6 offset-md-6 text-center text-md-end">
                 <h1>Bienvenido a la Universidad Paccioli Xalapa</h1>
-                <a href="https://www.facebook.com/UniversidadPaccioliXalapaOficial" target="_blank" class="btn btn-light">Convocatoria 2024</a>
+                <a href="https://www.facebook.com/UniversidadPaccioliXalapaOficial" target="_blank" rel="noopener noreferrer" class="btn btn-light">Convocatoria 2024</a>
                 <!-- <button type="button" class="btn btn-upx">Requisitos</button> -->
               </div>
             </div>
@@ -88,12 +114,12 @@
 
   <!-- NOSOTROS VISION MISION -->
 
-  <section id="nosotros" class="section-bg-blue py-5 d-none d-md-block custom-padding custom-margin" data-aos="fade-down">
+  <section id="nosotros" class="section-bg-blue py-5 d-none d-md-block custom-padding custom-margin"
+    data-aos="fade-down">
 
-
-    <div class="">
+    <div>
       <h1 class="subTituloMain padding-section" data-aos="fade-down" data-aos-delay="800">NOSOTROS</h1>
-      <p class="textoNosotros d-none d-md-block" data-aos="fade-up" data-aos-delay="800">
+      <p class="textoNosotros d-none d-md-block container" data-aos="fade-up" data-aos-delay="800">
         Somos una Institución de Educación Superior que prepara a sus
         alumnos para que se conviertan en ciudadanos responsables e
         impulsen el desarrollo de sus comunidades. La Universidad Paccioli
@@ -110,7 +136,7 @@
 
           <div class="col-md-6 mt-5 px-5">
             <h2 class="subTituloMain" data-aos="fade-right" data-aos-delay="400">MISIÓN</h2>
-            <p class="textoNosotros d-none d-md-block p-0" data-aos="fade-right" data-aos-delay="800">
+            <p class="textoNosotros d-none d-md-block p-0 container" data-aos="fade-right" data-aos-delay="800">
               Contribuir al formación integral de profesionales, especializados
               dispuesto a lograr la transformación social a partir, de la
               aplicación de ciencias y experiencias adquiridas durante su
@@ -121,7 +147,7 @@
 
           <div class="col-md-6 mt-5 px-5 ">
             <h2 class="subTituloMain" data-aos="fade-left" data-aos-delay="400">VISIÓN</h2>
-            <p class="textoNosotros d-none d-md-block p-0" data-aos="fade-left" data-aos-delay="800">
+            <p class="textoNosotros d-none d-md-block p-0 container" data-aos="fade-left" data-aos-delay="800">
               La Universidad Paccioli Xalapa mantendrá en su estructura la
               solidez y confianza respecto al trato y la importancia de la
               formación disciplinaria contribuyendo a ser una de las
@@ -139,12 +165,24 @@
 
     </div>
 
+     <div class="custom-card mx-auto my-4" data-aos="fade-up" data-aos-delay="800">
+      <!-- <div class="custom-card-header text-center">
+        <h5 class="custom-card-title">Video Institucional</h5>
+      </div> -->
+      <div class="custom-card-body">
+        <div class="ratio ratio-16x9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Z3pvBMUPBrU?si=lbhQHXvOpEOFPlXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
   </section>
   <!-- aqui termina  -->
 
 
   <!-- Carreras -->
-  <section id="carreras" href="#carreras" class="my-5 custom-padding custom-margin " data-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
+  <section id="carreras" href="#carreras" class="my-5 custom-padding custom-margin " data-aos="fade-down"
+    data-aos-delay="400" data-aos-easing="ease-in-out">
     <div class="container">
       <div class="row">
         <div class="col text-center text-uppercase ">
@@ -176,14 +214,16 @@
 
               <!-- Button trigger modal -->
               <div class="mt-auto d-flex justify-content-center align-items-end">
-                <button type="button" class="btn btn-primary btn-carrera" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <button type="button" class="btn btn-primary btn-carrera" data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop">
                   Ver plan de estudios
                 </button>
               </div>
 
 
               <!-- Modal -->
-              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -195,11 +235,14 @@
                       <div class="accordion" id="accordionPanelsStayOpenExample">
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOneUnam" aria-expanded="false" aria-controls="panelsStayOpen-collapseOneUnam">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseOneUnam" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseOneUnam">
                               PRIMER SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapseOneUnam" class="accordion-collapse collapse show" data-bs-parent="#accordionPanelsStayOpenExample">
+                          <div id="panelsStayOpen-collapseOneUnam" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionPanelsStayOpenExample">
                             <div class="accordion-body accordion-list accordion-list">
                               <ul>
                                 <li>DERECHO ROMANO I</li>
@@ -216,11 +259,14 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse2Unam" aria-expanded="false" aria-controls="panelsStayOpen-collapse2Unam">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse2Unam" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse2Unam">
                               SEGUNDO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse2Unam" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenExample">
+                          <div id="panelsStayOpen-collapse2Unam" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenExample">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>ACTO JURÍDICO Y PERSONAS</li>
@@ -237,11 +283,14 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse3Unam" aria-expanded="false" aria-controls="panelsStayOpen-collapse3Unam">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse3Unam" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse3Unam">
                               TERCER SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse3Unam" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenExample">
+                          <div id="panelsStayOpen-collapse3Unam" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenExample">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>BIENES Y DERECHO REALES</li>
@@ -258,11 +307,14 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse4Unam" aria-expanded="false" aria-controls="panelsStayOpen-collapse4Unam">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse4Unam" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse4Unam">
                               CUARTO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse4Unam" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenExample">
+                          <div id="panelsStayOpen-collapse4Unam" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenExample">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>DERECHO ADMINISTRATIVO I</li>
@@ -279,16 +331,19 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse5Unam" aria-expanded="false" aria-controls="panelsStayOpen-collapse5Unam">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse5Unam" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse5Unam">
                               QUINTO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse5Unam" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenExample">
+                          <div id="panelsStayOpen-collapse5Unam" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenExample">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>DERECHO INTERNACIONAL PÚBLICO</li>
                                 <li>DERECHO ADMINISTRATIVO II</li>
-                                <li>RÉGIMEN JURÍDICO DEL COMERCIO EXTERIOR/li>
+                                <li>RÉGIMEN JURÍDICO DEL COMERCIO EXTERIOR</li>
                                 <li>TÍTULOS Y OPERACIONES DE CRÉDITOS</li>
                                 <li>CONTRATOS CIVILES</li>
                                 <li>DERECHO PROCESAL PENAL</li>
@@ -300,11 +355,14 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse6Unam" aria-expanded="false" aria-controls="panelsStayOpen-collapse6Unam">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse6Unam" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse6Unam">
                               SEXTO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse6Unam" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenExample">
+                          <div id="panelsStayOpen-collapse6Unam" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenExample">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>DERECHO FISCAL I</li>
@@ -321,11 +379,14 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse7Unam" aria-expanded="false" aria-controls="panelsStayOpen-collapse7Unam">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse7Unam" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse7Unam">
                               SÉPTIMO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse7Unam" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenExample">
+                          <div id="panelsStayOpen-collapse7Unam" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenExample">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>DERECHO SUCESORIO</li>
@@ -342,11 +403,14 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse8Unam" aria-expanded="false" aria-controls="panelsStayOpen-collapse8Unam">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse8Unam" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse8Unam">
                               OCTAVO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse8Unam" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenExample">
+                          <div id="panelsStayOpen-collapse8Unam" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenExample">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>DERECHO AGRARIO</li>
@@ -364,7 +428,8 @@
 
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary btn-carrera" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-secondary btn-carrera"
+                        data-bs-dismiss="modal">Cerrar</button>
                     </div>
                   </div>
                 </div>
@@ -386,9 +451,8 @@
                 <span class="badge text-bg-primary">Escolarizado</span>
                 <span class="badge text-bg-secondary">Discontinuo</span>
               </div>
-              <p class="card-text d-none d-md-block mb-5">Los egresados contarán con conocimientos y habilidades
-                contables,
-                administrativas,
+              <p class="card-text d-none d-md-block mb-5">
+                Los egresados contarán con conocimientos y habilidades contables,administrativas,
                 fiscales, lógicas y computacionales, todo esto con el objetivo de poder resolver cualquier
                 problema
                 administrativo dandole una solucion tecnológicamente viable.
@@ -398,13 +462,15 @@
 
               <!-- Button trigger modal -->
               <div class="mt-auto d-flex justify-content-center align-items-end">
-                <button type="button" class="btn btn-primary btn-carrera" data-bs-toggle="modal" data-bs-target="#modal_info">
+                <button type="button" class="btn btn-primary btn-carrera" data-bs-toggle="modal"
+                  data-bs-target="#modal_info">
                   Ver plan de estudios
                 </button>
               </div>
 
               <!-- Modal -->
-              <div class="modal fade" id="modal_info" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+              <div class="modal fade" id="modal_info" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel2" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -417,19 +483,22 @@
                       <div class="accordion" id="accordionPanelsStayOpenInfo">
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOneInfo" aria-expanded="false" aria-controls="panelsStayOpen-collapseOneInfo">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseOneInfo" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseOneInfo">
                               PRIMER SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapseOneInfo" class="accordion-collapse collapse show" data-bs-parent="#accordionPanelsStayOpenInfo">
+                          <div id="panelsStayOpen-collapseOneInfo" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionPanelsStayOpenInfo">
                             <div class="accordion-body accordion-list">
                               <ul>
-                                <li>CONTABILIDAD GENERAL I</li>
+                                <li>CONTABILIDAD GENERAL</li>
                                 <li>DERECHO CIVIL</li>
                                 <li>MÉTODOS DE ESTUDIO</li>
                                 <li>MATEMÁTICAS</li>
                                 <li>ECONOMÍA</li>
-                                <li>INFORMÁTICA I</li>
+                                <li>INFORMÁTICA BÁSICA</li>
                               </ul>
                             </div>
                           </div>
@@ -437,19 +506,22 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse2Info" aria-expanded="false" aria-controls="panelsStayOpen-collapse2Info">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse2Info" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse2Info">
                               SEGUNDO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse2Info" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenInfo">
+                          <div id="panelsStayOpen-collapse2Info" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenInfo">
                             <div class="accordion-body accordion-list">
                               <ul>
-                                <li>CONTABILIDAD GENERALII</li>
+                                <li>CONTABILIDAD INTERMEDIA</li>
                                 <li>DERECHO MERCANTIL</li>
                                 <li>ADMINISTRACIÓN</li>
-                                <li>MATEMÁTICAS FINANCIERAS I</li>
+                                <li>MATEMÁTICAS FINANCIERAS</li>
                                 <li>MICROECONOMÍA</li>
-                                <li>INFORMÁTICA II</li>
+                                <li>SISTEMAS DE INFORMACIÓN</li>
                               </ul>
                             </div>
                           </div>
@@ -457,20 +529,22 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse3Info" aria-expanded="false" aria-controls="panelsStayOpen-collapse3Info">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse3Info" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse3Info">
                               TERCER SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse3Info" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenInfo">
+                          <div id="panelsStayOpen-collapse3Info" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenInfo">
                             <div class="accordion-body accordion-list">
                               <ul>
-                                <li>CONTABILIDAD GENERAL III</li>
-                                <li>DERECHO LABORAL</li>
-                                <li>MATEMÁTICAS FINANCIERAS II</li>
-                                <li>INFORMÁTICA III</li>
-                                <li>MACROECONOMÍA I</li>
-                                <li>AUDITORIA</li>
-                                <li>INFORMÁTICA</li>
+                                <li>CONTABILIDAD AVANZADA</li>
+                                <li>DERECHO ADMINISTRATIVO</li>
+                                <li>PROCESO ADMINISTRATIVO</li>
+                                <li>INGLÉS BÁSICO</li>
+                                <li>MACROECONOMÍA</li>
+                                <li>SOFTWARE Y GESTIÓN ADMINISTRATIVA Y CONTABLE</li>
                               </ul>
                             </div>
                           </div>
@@ -478,19 +552,22 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse4Info" aria-expanded="false" aria-controls="panelsStayOpen-collapse4Info">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse4Info" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse4Info">
                               CUARTO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse4Info" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenInfo">
+                          <div id="panelsStayOpen-collapse4Info" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenInfo">
                             <div class="accordion-body accordion-list">
                               <ul>
-                                <li>COSTOS INDUSTRIALES</li>
+                                <li>CONTABILIDAD DE COSTOS</li>
                                 <li>POLÍTICA Y LEGISLACIÓN EN INFORMÁTICA</li>
                                 <li>ARQUITECTURA DE COMPUTADORAS</li>
-                                <li>INFORMÁTICA IV</li>
-                                <li>MACROECONOMÍA II</li>
-                                <li>ESTADÍSTICA Y PROBABILIDAD</li>
+                                <li>ESTADÍSTICA</li>
+                                <li>INGLÉS INTERMEDIO</li>
+                                <li>EL MEDIO AMBIENTE Y LAS ORGANIZACIONES</li>
                               </ul>
                             </div>
                           </div>
@@ -498,11 +575,14 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse5Info" aria-expanded="false" aria-controls="panelsStayOpen-collapse5Info">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse5Info" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse5Info">
                               QUINTO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse5Info" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenInfo">
+                          <div id="panelsStayOpen-collapse5Info" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenInfo">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>PRESUPUESTOS</li>
@@ -510,7 +590,7 @@
                                 <li>TRADUCTORES</li>
                                 <li>MATEMÁTICAS DISCRETAS</li>
                                 <li>ANÁLISIS DE ALGORITMOS</li>
-                                <li>LENGUAJES TÉCNICOS I</li>
+                                <li>INGLÉS AVANZADO</li>
                               </ul>
                             </div>
                           </div>
@@ -518,19 +598,22 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse6Info" aria-expanded="false" aria-controls="panelsStayOpen-collapse6Info">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse6Info" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse6Info">
                               SEXTO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse6Info" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenInfo">
+                          <div id="panelsStayOpen-collapse6Info" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenInfo">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>INVESTIGACIÓN DE OPERACIONES</li>
                                 <li>INGENIERÍA DE SOFTWARE</li>
                                 <li>SISTEMAS OPERATIVOS</li>
                                 <li>MATEMÁTICAS COMPUTACIONALES</li>
-                                <li>SISTEMAS DE INFORMACIÓN</li>
-                                <li>LENGUAJES TÉCNICOS II</li>
+                                <li>SISTEMAS DE INFORMACIÓN ORGANIZACIONAL</li>
+                                <li>LENGUAJES TÉCNICOS</li>
                               </ul>
                             </div>
                           </div>
@@ -538,19 +621,22 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse7Info" aria-expanded="false" aria-controls="panelsStayOpen-collapse7Info">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse7Info" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse7Info">
                               SÉPTIMO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse7Info" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenInfo">
+                          <div id="panelsStayOpen-collapse7Info" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenInfo">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>RECURSOS HUMANOS EN INFORMÁTICA</li>
-                                <li>PLANEACIÓN DE SOFTWARE</li>
+                                <li>METODOLOGÍA DE LA INVESTIGACIÓN</li>
                                 <li>LENGUAJES ADMINISTRATIVOS I</li>
-                                <li>COMUNICACIÓN Y TELEPROCESOS</li>
+                                <li>LENGUAJES Y TELEPROCESOS</li>
                                 <li>BASES DE DATOS</li>
-                                <li>ANÁLISIS DE DISEÑO DE SOFTWARE</li>
+                                <li>PLANEACIÓN Y DISEÑO DE SOFTWARE</li>
                               </ul>
                             </div>
                           </div>
@@ -559,11 +645,14 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse8Info" aria-expanded="false" aria-controls="panelsStayOpen-collapse8Info">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse8Info" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse8Info">
                               OCTAVO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse8Info" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenInfo">
+                          <div id="panelsStayOpen-collapse8Info" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenInfo">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>LENGUAJES ADMINISTRATIVOS II</li>
@@ -571,6 +660,7 @@
                                 <li>REDES DE COMPUTADORAS</li>
                                 <li>CONSTRUCCIÓN DE SOFTWARE</li>
                                 <li>LENGUAJES AVANZADOS</li>
+                                <li>SEMINARIO DE INVESTIGACIÓN</li>
                               </ul>
                             </div>
                           </div>
@@ -580,7 +670,8 @@
 
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary btn-carrera" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-secondary btn-carrera"
+                        data-bs-dismiss="modal">Cerrar</button>
                     </div>
                   </div>
                 </div>
@@ -618,14 +709,16 @@
 
               <!-- Button trigger modal -->
               <div class="mt-auto d-flex justify-content-center align-items-end">
-                <button type="button" class="  btn btn-primary btn-carrera" data-bs-toggle="modal" data-bs-target="#modal_conta">
+                <button type="button" class="  btn btn-primary btn-carrera" data-bs-toggle="modal"
+                  data-bs-target="#modal_conta">
                   Ver plan de estudios
                 </button>
               </div>
 
 
               <!-- Modal -->
-              <div class="modal fade" id="modal_conta" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+              <div class="modal fade" id="modal_conta" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel3" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -637,19 +730,22 @@
                       <div class="accordion" id="accordionPanelsStayOpenConta">
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOneConta" aria-expanded="false" aria-controls="panelsStayOpen-collapseOneConta">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseOneConta" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseOneConta">
                               PRIMER SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapseOneConta" class="accordion-collapse collapse show" data-bs-parent="#accordionPanelsStayOpenConta">
+                          <div id="panelsStayOpen-collapseOneConta" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionPanelsStayOpenConta">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>CONTABILIDAD GENERAL</li>
                                 <li>DERECHO CIVIL</li>
                                 <li>MÉTODOS DE ESTUDIO</li>
-                                <li>MATEMÁTICAS I</li>
-                                <li>INTRODUCCIÓN A LA ECONOMÍA</li>
-                                <li>INFORMÁTICA I</li>
+                                <li>MATEMÁTICAS</li>
+                                <li>ECONOMÍA</li>
+                                <li>INFORMÁTICA BÁSICA</li>
                               </ul>
                             </div>
                           </div>
@@ -657,19 +753,22 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse2Conta" aria-expanded="false" aria-controls="panelsStayOpen-collapse2Conta">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse2Conta" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse2Conta">
                               SEGUNDO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse2Conta" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenConta">
+                          <div id="panelsStayOpen-collapse2Conta" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenConta">
                             <div class="accordion-body accordion-list">
                               <ul>
-                                <li>CONTABILIDAD FINANCIERA I</li>
+                                <li>CONTABILIDAD INTERMEDIA</li>
                                 <li>DERECHO MERCANTIL</li>
-                                <li>ADMINISTRACIÓN I</li>
-                                <li>MATEMÁTICAS II</li>
-                                <li> MICROECONOMÍA</li>
-                                <li>INFORMÁTICA II</li>
+                                <li>ADMINISTRACIÓN</li>
+                                <li>MATEMÁTICAS FINANCIERAS</li>
+                                <li>MICROECONOMÍA</li>
+                                <li>SISTEMAS DE INFORMACIÓN</li>
                               </ul>
                             </div>
                           </div>
@@ -677,19 +776,22 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse3Conta" aria-expanded="false" aria-controls="panelsStayOpen-collapse3Conta">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse3Conta" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse3Conta">
                               TERCER SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse3Conta" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenConta">
+                          <div id="panelsStayOpen-collapse3Conta" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenConta">
                             <div class="accordion-body accordion-list">
                               <ul>
-                                <li>CONTABILIDAD FINANCIERA II</li>
+                                <li>CONTABILIDAD AVANZADA</li>
                                 <li>DERECHO ADMINISTRATIVO</li>
-                                <li>ADMINISTRACIÓN II</li>
-                                <li>MATEMATICAS III</li>
-                                <li>MACROECONOMÍA I</li>
-                                <li>INFORMÁTICA III</li>
+                                <li>PROCESO ADMINISTRATIVO</li>
+                                <li>INGLÉS BÁSICO</li>
+                                <li>MACROECONOMÍA</li>
+                                <li>SOFTWARE DE GESTIÓN ADMINISTRATIVA Y CONTABLE</li>
                               </ul>
                             </div>
                           </div>
@@ -697,19 +799,22 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse4Conta" aria-expanded="false" aria-controls="panelsStayOpen-collapse4Conta">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse4Conta" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse4Conta">
                               CUARTO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse4Conta" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenConta">
+                          <div id="panelsStayOpen-collapse4Conta" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenConta">
                             <div class="accordion-body accordion-list">
                               <ul>
-                                <li>CONTABILIDAD DE COSTOS I</li>
+                                <li>CONTABILIDAD DE COSTOS</li>
                                 <li>DERECHO LABORAL</li>
                                 <li>PSICOLOGÍA INDUSTRIAL</li>
-                                <li>MATEMÁTICAS IV</li>
-                                <li>MACROECONOMÍA II</li>
-                                <li>INFORMÁTICA IV</li>
+                                <li>ESTADÍSTICA</li>
+                                <li>INGLÉS INTERMEDIO</li>
+                                <li>EL MEDIO AMBIENTE Y LAS ORGANIZACIONES</li>
                               </ul>
                             </div>
                           </div>
@@ -717,19 +822,22 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse5Conta" aria-expanded="false" aria-controls="panelsStayOpen-collapse5Conta">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse5Conta" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse5Conta">
                               QUINTO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse5Conta" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenConta">
+                          <div id="panelsStayOpen-collapse5Conta" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenConta">
                             <div class="accordion-body accordion-list">
                               <ul>
-                                <li>FINANZAS I</li>
+                                <li>FINANZAS</li>
+                                <li>INGLÉS AVANZADO</li>
                                 <li>PRESUPUESTOS</li>
-                                <li>CONTABILIDAD DE COSTOS II</li>
+                                <li>CONTABILIDAD ADMINISTRATIVA</li>
                                 <li>DERECHO FISCAL</li>
-                                <li>DESARROLLO EMPRENDEDOR</li>
-                                <li>INFORMÁTICA ADMINISTRATIVA</li>
+                                <li>DESARROLLO DE EMPRENDEDORES</li>
                               </ul>
                             </div>
                           </div>
@@ -737,19 +845,20 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse6Conta" aria-expanded="false" aria-controls="panelsStayOpen-collapse6Conta">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse6Conta" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse6Conta">
                               SEXTO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse6Conta" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenConta">
+                          <div id="panelsStayOpen-collapse6Conta" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenConta">
                             <div class="accordion-body accordion-list">
                               <ul>
-                                <li>FINANZAS II</li>
-                                <li>AUDITORÍA I</li>
-                                <li>DERECHO BANCARIO</li>
-                                <li>CONTABILIDAD DE SOCIEDADES I </li>
-                                <li>I.S.R. PERSONAS MORALES</li>
-                                <li>AUDITORÍA INFORMÁTICA I</li>
+                                <li>FINANZAS CORPORATIVAS</li>
+                                <li>AUDITORÍA</li>
+                                <li>CONTABILIDAD DE SOCIEDADES</li>
+                                <li>PERSONAS MORALES</li>
                                 <li>REEXPRESIÓN FINANCIERA I</li>
                               </ul>
                             </div>
@@ -758,20 +867,22 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse7Conta" aria-expanded="false" aria-controls="panelsStayOpen-collapse7Conta">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse7Conta" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse7Conta">
                               SÉPTIMO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse7Conta" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenConta">
+                          <div id="panelsStayOpen-collapse7Conta" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenConta">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>PROYECTOS DE INVERSIÓN</li>
-                                <li>AUDITORÍA II</li>
-                                <li>CONTABILIDAD DE SOCIEDADES II</li>
-                                <li>I.S.R. PERSONAS FÍSICAS</li>
-                                <li>AUDITORÍA</li>
-                                <li>AUDITORÍA</li>
-                                <li>REEXPRESIÓN FINANCIERA II</li>
+                                <li>METODOLOGÍA DE LA INVESTIGACIÓN</li>
+                                <li>CONTABILIDAD GUBERNAMENTAL</li>
+                                <li>PERSONAS FÍSICAS</li>
+                                <li>SEGURIDAD SOCIAL</li>
+                                <li>ADMINISTRACIÓN DE RECURSOS HUMANOS</li>
                               </ul>
                             </div>
                           </div>
@@ -780,19 +891,22 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse8Conta" aria-expanded="false" aria-controls="panelsStayOpen-collapse8Conta">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse8Conta" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse8Conta">
                               OCTAVO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse8Conta" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenConta">
+                          <div id="panelsStayOpen-collapse8Conta" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenConta">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>SEMINARIO DE CONTABILIDAD</li>
                                 <li>SEMINARIO DE FISCAL</li>
                                 <li>SEMINARIO DE AUDITORÍA</li>
                                 <li>SEMINARIO DE FINANZAS</li>
-                                <li>LIDERAZGO Y PRODUCTIVIDAD</li>
-                                <li>ADMINISTRACIÓN DE RECURSOS HUMANOS</li>
+                                <li>DIRECCIÓN EMPRESARIAL</li>
+                                <li>SEMINARIO DE INVESTIGACIÓN</li>
                               </ul>
                             </div>
                           </div>
@@ -802,7 +916,8 @@
 
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary btn-carrera" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-secondary btn-carrera"
+                        data-bs-dismiss="modal">Cerrar</button>
                     </div>
                   </div>
                 </div>
@@ -841,7 +956,8 @@
 
               <!-- Button trigger modal -->
               <div class="mt-auto d-flex justify-content-center align-items-end">
-                <button type="button" class=" btn btn-primary btn-carrera" data-bs-toggle="modal" data-bs-target="#modal_pedagogia">
+                <button type="button" class=" btn btn-primary btn-carrera" data-bs-toggle="modal"
+                  data-bs-target="#modal_pedagogia">
                   Ver plan de estudios
                 </button>
               </div>
@@ -849,7 +965,8 @@
 
 
               <!-- Modal -->
-              <div class="modal fade" id="modal_pedagogia" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel4" aria-hidden="true">
+              <div class="modal fade" id="modal_pedagogia" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel4" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -862,19 +979,22 @@
                       <div class="accordion" id="accordionPanelsStayOpenPedagogia">
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOnePedagogia" aria-expanded="false" aria-controls="panelsStayOpen-collapseOnePedagogia">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseOnePedagogia" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseOnePedagogia">
                               PRIMER SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapseOnePedagogia" class="accordion-collapse collapse show" data-bs-parent="#accordionPanelsStayOpenPedagogia">
+                          <div id="panelsStayOpen-collapseOnePedagogia" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionPanelsStayOpenPedagogia">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>HISTORIA SOCIAL DE LA EDUCACIÓN</li>
                                 <li>EPISTEMOLOGÍA GENERAL</li>
-                                <li>METODOLOGÍA DE LA INVESTIGACIÓN I</li>
-                                <li>EPISTEMOLOGÍA DE LA INVESTIGACIÓN</li>
+                                <li>METODOS Y TÉCNICAS DE LA INVESTIGACIÓN SOCIAL</li>
+                                <li>INGLÉS BÁSICO</li>
                                 <li>LÓGICA SIMBÓLICA</li>
-                                <li>INFORMÁTICA I</li>
+                                <li>INFORMÁTICA</li>
                               </ul>
                             </div>
                           </div>
@@ -882,38 +1002,21 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse2Pedagogia" aria-expanded="false" aria-controls="panelsStayOpen-collapse2Pedagogia">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse2Pedagogia" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse2Pedagogia">
                               SEGUNDO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse2Pedagogia" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenPedagogia">
+                          <div id="panelsStayOpen-collapse2Pedagogia" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenPedagogia">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>FILOSOFÍA DE LA EDUCACIÓN I</li>
                                 <li>FUNDAMENTOS DE PSICOLOGÍA SOCIAL</li>
-                                <li>METODOLOGÍA DE LA INVESTIGACIÓN II</li>
+                                <li>METODOLOGÍA DE LA EDUCACIÓN EDUCATIVA</li>
                                 <li>ANÁLISIS DE LA EDUCACIÓN EN MEXICO</li>
-                                <li>HISTORIA DE LA FILOSOFÍA</li>
-                                <li>INFORMÁTICA II</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse3Pedagogia" aria-expanded="false" aria-controls="panelsStayOpen-collapse3Pedagogia">
-                              TERCER SEMESTRE
-                            </button>
-                          </h2>
-                          <div id="panelsStayOpen-collapse3Pedagogia" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenPedagogia">
-                            <div class="accordion-body accordion-list">
-                              <ul>
-                                <li>FILOSOFÍA DE LA EDUCACIÓN II</li>
-                                <li>MOTIVACIÓN Y EMOCIÓN</li>
-                                <li>MÉTODOS CUANTITATIVOS I</li>
-                                <li>TEORIAS PEDAGÓGICAS</li>
-                                <li>SOCIOLOGÍA DE LA EDUCACIÓN</li>
+                                <li>INGLÉS INTERMEDIO</li>
                                 <li>INFORMÁTICA APLICADA A LA EDUCACIÓN</li>
                               </ul>
                             </div>
@@ -922,19 +1025,22 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse4Pedagogia" aria-expanded="false" aria-controls="panelsStayOpen-collapse4Pedagogia">
-                              CUARTO SEMESTRE
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse3Pedagogia" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse3Pedagogia">
+                              TERCER SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse4Pedagogia" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenPedagogia">
+                          <div id="panelsStayOpen-collapse3Pedagogia" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenPedagogia">
                             <div class="accordion-body accordion-list">
                               <ul>
-                                <li>DESARROLLO INFANTIL</li>
-                                <li>MÉTODOS CUANTITATIVOS II</li>
-                                <li>PROCESOS EDUCATIVOS</li>
-                                <li>DINÁMICA DE GRUPOS</li>
-                                <li>ECONOMÍA DE LA EDUCACIÓN</li>
-                                <li>APRENDIZAJE Y MEMORIA</li>
+                                <li>FILOSOFÍA DE LA EDUCACIÓN II</li>
+                                <li>MOTIVACIÓN Y EMOCIÓN</li>
+                                <li>MÉTODOS CUANTITATIVOS I</li>
+                                <li>TEORIAS PEDAGÓGICAS</li>
+                                <li>SOCIOLOGÍA DE LA EDUCACIÓN</li>
+                                <li>INGLÉS AVANZADO</li>
                               </ul>
                             </div>
                           </div>
@@ -942,11 +1048,37 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse5Pedagogia" aria-expanded="false" aria-controls="panelsStayOpen-collapse5Pedagogia">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse4Pedagogia" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse4Pedagogia">
+                              CUARTO SEMESTRE
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapse4Pedagogia" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenPedagogia">
+                            <div class="accordion-body accordion-list">
+                              <ul>
+                                <li>DESARROLLO INFANTIL</li>
+                                <li>APRENDIZAJE Y MEMORIA</li>
+                                <li>MÉTODOS CUANTITATIVOS II</li>
+                                <li>PROCESOS EDUCATIVOS</li>
+                                <li>DINÁMICA DE GRUPOS</li>
+                                <li>ECONOMÍA DE LA EDUCACIÓN</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse5Pedagogia" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse5Pedagogia">
                               QUINTO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse5Pedagogia" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenPedagogia">
+                          <div id="panelsStayOpen-collapse5Pedagogia" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenPedagogia">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>DESARROLLO DEL ADOLESCENTE</li>
@@ -954,7 +1086,7 @@
                                 <li>INTRODUCCIÓN A LA ADMINISTRACIÓN</li>
                                 <li>ÉTICA</li>
                                 <li>CONDUCCIÓN DE GRUPOS</li>
-                                <li>PROBLEMAS ECONÓMICOS DE MÉXICO</li>
+                                <li>EDUCACIÓN AMBIENTAL</li>
                               </ul>
                             </div>
                           </div>
@@ -962,11 +1094,14 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse6Pedagogia" aria-expanded="false" aria-controls="panelsStayOpen-collapse6Pedagogia">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse6Pedagogia" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse6Pedagogia">
                               SEXTO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse6Pedagogia" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenPedagogia">
+                          <div id="panelsStayOpen-collapse6Pedagogia" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenPedagogia">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>ADULTÉZ Y SENECTUD</li>
@@ -982,16 +1117,19 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse7Pedagogia" aria-expanded="false" aria-controls="panelsStayOpen-collapse7Pedagogia">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse7Pedagogia" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse7Pedagogia">
                               SÉPTIMO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse7Pedagogia" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenPedagogia">
+                          <div id="panelsStayOpen-collapse7Pedagogia" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenPedagogia">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>EDUCACIÓN PARA LOS ADULTOS</li>
                                 <li>PLANEACIÓN DIDÁCTICA</li>
-                                <li>ADMINISTRACIÓN Y GESTIÓN EDUCATIVA I</li>
+                                <li>ADMINISTRACIÓN Y GESTIÓN EDUCATIVA</li>
                                 <li>PSICOTÉCNICA PEDAGÓGICA</li>
                                 <li>CORRIENTES PEDAGÓGICAS CONTEMPORÁNEAS</li>
                                 <li>LEGISLACIÓN Y POLÍTICA EDUCATIVA</li>
@@ -1003,16 +1141,19 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse8Pedagogia" aria-expanded="false" aria-controls="panelsStayOpen-collapse8Pedagogia">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse8Pedagogia" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse8Pedagogia">
                               OCTAVO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse8Pedagogia" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenPedagogia">
+                          <div id="panelsStayOpen-collapse8Pedagogia" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenPedagogia">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>PROBLEMAS DE APRENDIZAJE</li>
                                 <li>SUPERVISIÓN ESCOLAR</li>
-                                <li>ADMINISTRACIÓN Y GESTIÓN EDUCATIVA II</li>
+                                <li>SEMINARIO DE INVESTIGACIÓN EDUCATIVA</li>
                                 <li>FORMACIÓN DOCENTE</li>
                                 <li>ORIENTACIÓN EDUCATIVA</li>
                                 <li>EDUCACIÓN ESPECIAL</li>
@@ -1025,7 +1166,8 @@
 
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary btn-carrera" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-secondary btn-carrera"
+                        data-bs-dismiss="modal">Cerrar</button>
                     </div>
                   </div>
                 </div>
@@ -1045,7 +1187,7 @@
           <div class="card h-100">
             <img src="assets/images/carreras/administracion.webp" class="card-img-top" alt="Administración">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">ADMINISTRACIÓN</h5>
+              <h5 class="card-title">ADMINISTRACIÓN DE EMPRESAS</h5>
               <div class="badges mb-2">
                 <span class="badge text-bg-primary">Escolarizado</span>
                 <span class="badge text-bg-secondary">Discontinuo</span>
@@ -1060,19 +1202,21 @@
 
               <!-- Button trigger modal -->
               <div class="mt-auto d-flex justify-content-center align-items-end">
-                <button type="button" class=" btn btn-primary btn-carrera" data-bs-toggle="modal" data-bs-target="#modal_admon">
+                <button type="button" class=" btn btn-primary btn-carrera" data-bs-toggle="modal"
+                  data-bs-target="#modal_admon">
                   Ver plan de estudios
                 </button>
               </div>
 
 
               <!-- Modal -->
-              <div class="modal fade" id="modal_admon" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel5" aria-hidden="true">
+              <div class="modal fade" id="modal_admon" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel5" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h1 class="modal-title fs-5" id="staticBackdropLabel5">Plan de estudios
-                        <strong>Administración</strong>
+                        <strong>Administración de Empresas</strong>
                       </h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -1081,19 +1225,22 @@
                       <div class="accordion" id="accordionPanelsStayOpenAdmon">
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOneAdmon" aria-expanded="false" aria-controls="panelsStayOpen-collapseOneAdmon">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseOneAdmon" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseOneAdmon">
                               PRIMER SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapseOneAdmon" class="accordion-collapse collapse show" data-bs-parent="#accordionPanelsStayOpenAdmon">
+                          <div id="panelsStayOpen-collapseOneAdmon" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionPanelsStayOpenAdmon">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>CONTABILIDAD GENERAL</li>
                                 <li>DERECHO CIVIL</li>
                                 <li>MÉTODOS DE ESTUDIO</li>
-                                <li>ÁLGEBRA GENERAL</li>
-                                <li>INTRODUCCIÓN A LA ECONOMÍA</li>
-                                <li>INFORMÁTICA I</li>
+                                <li>MATEMÁTICAS</li>
+                                <li>ECONOMÍA</li>
+                                <li>INFORMÁTICA BÁSICA</li>
                               </ul>
                             </div>
                           </div>
@@ -1101,19 +1248,22 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse2Admon" aria-expanded="false" aria-controls="panelsStayOpen-collapse2Admon">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse2Admon" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse2Admon">
                               SEGUNDO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse2Admon" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenAdmon">
+                          <div id="panelsStayOpen-collapse2Admon" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenAdmon">
                             <div class="accordion-body accordion-list">
                               <ul>
-                                <li>TÉCNICAS CONTABLES I</li>
+                                <li>CONTABILIDAD INTERMEDIA</li>
                                 <li>DERECHO MERCANTIL</li>
                                 <li>ADMINISTRACIÓN I</li>
                                 <li>MATEMÁTICAS FINANCIERAS I</li>
-                                <li> MICROECONOMÍA</li>
-                                <li>INFORMÁTICA II</li>
+                                <li>MICROECONOMÍA</li>
+                                <li>SISTEMAS DE INFORMACIÓN</li>
                               </ul>
                             </div>
                           </div>
@@ -1121,19 +1271,22 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse3Admon" aria-expanded="false" aria-controls="panelsStayOpen-collapse3Admon">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse3Admon" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse3Admon">
                               TERCER SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse3Admon" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenAdmon">
+                          <div id="panelsStayOpen-collapse3Admon" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenAdmon">
                             <div class="accordion-body accordion-list">
                               <ul>
-                                <li>TÉCNICAS CONTABLES II</li>
+                                <li>CONTABILIDAD AVANZADA</li>
                                 <li>DERECHO ADMINISTRATIVO</li>
-                                <li>ADMINISTRACIÓN II</li>
-                                <li>MATEMATICAS FINANCIERAS II</li>
-                                <li>MACROECONOMÍA I</li>
-                                <li>INFORMÁTICA III</li>
+                                <li>PROCESO ADMINISTRATIVO</li>
+                                <li>INGLÉS BÁSICO</li>
+                                <li>MACROECONOMÍA</li>
+                                <li>SOFTWARE DE GESTIÓN ADMINISTRATIVA</li>
                               </ul>
                             </div>
                           </div>
@@ -1141,19 +1294,22 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse4Admon" aria-expanded="false" aria-controls="panelsStayOpen-collapse4Admon">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse4Admon" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse4Admon">
                               CUARTO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse4Admon" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenAdmon">
+                          <div id="panelsStayOpen-collapse4Admon" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenAdmon">
                             <div class="accordion-body accordion-list">
                               <ul>
-                                <li>COSTOS INDUSTRIALES</li>
+                                <li>CONTABILIDAD DE COSTOS</li>
                                 <li>DERECHO LABORAL</li>
                                 <li>PSICOLOGÍA INDUSTRIAL</li>
-                                <li>ESTADÍSTICA Y PROBABILIDAD</li>
-                                <li>MACROECONOMÍA II</li>
-                                <li>INFORMÁTICA IV</li>
+                                <li>ESTADÍSTICA</li>
+                                <li>INGLÉS INTERMEDIO</li>
+                                <li>EL MEDIO AMBIENTE Y LAS ORGANIZACIONES</li>
                               </ul>
                             </div>
                           </div>
@@ -1161,16 +1317,19 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse5Admon" aria-expanded="false" aria-controls="panelsStayOpen-collapse5Admon">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse5Admon" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse5Admon">
                               QUINTO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse5Admon" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenAdmon">
+                          <div id="panelsStayOpen-collapse5Admon" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenAdmon">
                             <div class="accordion-body accordion-list">
                               <ul>
-                                <li>FINANZAS I</li>
-                                <li>MERCADOTECNIA I</li>
-                                <li>COMUNICACIÓN ORGANIZACIONAL</li>
+                                <li>FINANZAS</li>
+                                <li>INGLÉS AVANZADO</li>
+                                <li>COMUNICACIÓN</li>
                                 <li>ADMINISTRACIÓN DE RECURSOS HUMANOS</li>
                                 <li>PLANEACIÓN Y CONTROL</li>
                                 <li>SISTEMAS PRODUCTIVOS</li>
@@ -1181,17 +1340,20 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse6Admon" aria-expanded="false" aria-controls="panelsStayOpen-collapse6Admon">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse6Admon" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse6Admon">
                               SEXTO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse6Admon" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenAdmon">
+                          <div id="panelsStayOpen-collapse6Admon" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenAdmon">
                             <div class="accordion-body accordion-list">
                               <ul>
-                                <li>FINANZAS II</li>
-                                <li>MERCADOTECNIA II</li>
-                                <li>ADMINISTRACIÓN DE LA PRODUCCIÓN I</li>
-                                <li>LABORATORIO DE TÉCNICAS DE PLANEACIÓN </li>
+                                <li>FINANZAS CORPORATIVAS</li>
+                                <li>INGLÉS AVANZADO</li>
+                                <li>MERCADOTECNIA</li>
+                                <li>ADMINISTRACIÓN DE LA PRODUCCIÓN</li>
                                 <li>DIAGNÓSTICO ORGANIZACIONAL</li>
                                 <li>PLANEACIÓN DE RECURSOS HUMANOS</li>
                               </ul>
@@ -1201,15 +1363,18 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse7Admon" aria-expanded="false" aria-controls="panelsStayOpen-collapse7Admon">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse7Admon" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse7Admon">
                               SÉPTIMO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse7Admon" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenAdmon">
+                          <div id="panelsStayOpen-collapse7Admon" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenAdmon">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>PROYECTOS DE INVERSIÓN</li>
-                                <li>ADMINISTRACIÓN DE LA PRODUCCIÓN II</li>
+                                <li>METODOLOGÍA DE LA INVESTIGACIÓN</li>
                                 <li>ÁNALISIS DE DECISIONES</li>
                                 <li>SUELDOS Y SALARIOS</li>
                                 <li>INVESTIGACIÓN DE MERCADOS</li>
@@ -1222,18 +1387,21 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse8Admon" aria-expanded="false" aria-controls="panelsStayOpen-collapse8Admon">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse8Admon" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse8Admon">
                               OCTAVO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse8Admon" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenAdmon">
+                          <div id="panelsStayOpen-collapse8Admon" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenAdmon">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>AUDITORÍA ADMINISTRATIVA</li>
                                 <li>CONTROL DE CALIDAD</li>
                                 <li>CAPACITACIÓN Y DESARROLLO</li>
                                 <li>DIRECCIÓN EMPRESARIAL</li>
-                                <li>TECNOLOGÍA DE PRODUCCIÓN</li>
+                                <li>SEMINARIO DE INVESTIGACIÓN</li>
                                 <li>SEMINARIO DE ADMINISTRACIÓN</li>
                               </ul>
                             </div>
@@ -1244,7 +1412,8 @@
 
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary btn-carrera" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-secondary btn-carrera"
+                        data-bs-dismiss="modal">Cerrar</button>
                     </div>
                   </div>
                 </div>
@@ -1274,14 +1443,16 @@
               </p>
 
               <div class="mt-auto d-flex justify-content-center align-items-end  pt-3">
-                <button type="button" class=" btn btn-primary btn-carrera" data-bs-toggle="modal" data-bs-target="#modal_derecho">
+                <button type="button" class=" btn btn-primary btn-carrera" data-bs-toggle="modal"
+                  data-bs-target="#modal_derecho">
                   Ver plan de estudios
                 </button>
               </div>
 
 
               <!-- Modal -->
-              <div class="modal fade" id="modal_derecho" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel5" aria-hidden="true">
+              <div class="modal fade" id="modal_derecho" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel5" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -1295,11 +1466,14 @@
                       <div class="accordion" id="accordionPanelsStayOpenDerecho">
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOneDerecho" aria-expanded="false" aria-controls="panelsStayOpen-collapseOneDerecho">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseOneDerecho" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseOneDerecho">
                               PRIMER SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapseOneDerecho" class="accordion-collapse collapse show" data-bs-parent="#accordionPanelsStayOpenDerecho">
+                          <div id="panelsStayOpen-collapseOneDerecho" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionPanelsStayOpenDerecho">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>INTRODUCCIÓN AL ESTUDIO DEL DERECHO</li>
@@ -1315,11 +1489,14 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse2Derecho" aria-expanded="false" aria-controls="panelsStayOpen-collapse2Derecho">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse2Derecho" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse2Derecho">
                               SEGUNDO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse2Derecho" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenDerecho">
+                          <div id="panelsStayOpen-collapse2Derecho" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenDerecho">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>TEORÍA DEL DERECHO</li>
@@ -1335,11 +1512,14 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse3Derecho" aria-expanded="false" aria-controls="panelsStayOpen-collapse3Derecho">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse3Derecho" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse3Derecho">
                               TERCER SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse3Derecho" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenDerecho">
+                          <div id="panelsStayOpen-collapse3Derecho" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenDerecho">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>SISTEMAS JURÍDICOS</li>
@@ -1355,11 +1535,14 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse4Derecho" aria-expanded="false" aria-controls="panelsStayOpen-collapse4Derecho">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse4Derecho" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse4Derecho">
                               CUARTO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse4Derecho" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenDerecho">
+                          <div id="panelsStayOpen-collapse4Derecho" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenDerecho">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>SISTEMAS POLÍTICOS</li>
@@ -1374,11 +1557,14 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse5Derecho" aria-expanded="false" aria-controls="panelsStayOpen-collapse5Derecho">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse5Derecho" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse5Derecho">
                               QUINTO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse5Derecho" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenDerecho">
+                          <div id="panelsStayOpen-collapse5Derecho" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenDerecho">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>DERECHO ADMINISTRATIVO I</li>
@@ -1394,11 +1580,14 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse6Derecho" aria-expanded="false" aria-controls="panelsStayOpen-collapse6Derecho">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse6Derecho" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse6Derecho">
                               SEXTO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse6Derecho" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenDerecho">
+                          <div id="panelsStayOpen-collapse6Derecho" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenDerecho">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>DERECHO MERCANTIL</li>
@@ -1413,11 +1602,14 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse7Derecho" aria-expanded="false" aria-controls="panelsStayOpen-collapse7Derecho">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse7Derecho" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse7Derecho">
                               SÉPTIMO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse7Derecho" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenDerecho">
+                          <div id="panelsStayOpen-collapse7Derecho" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenDerecho">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>DERECHO ADMINISTRATIVO III</li>
@@ -1433,11 +1625,14 @@
 
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse8Derecho" aria-expanded="false" aria-controls="panelsStayOpen-collapse8Derecho">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse8Derecho" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse8Derecho">
                               OCTAVO SEMESTRE
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapse8Derecho" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenDerecho">
+                          <div id="panelsStayOpen-collapse8Derecho" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionPanelsStayOpenDerecho">
                             <div class="accordion-body accordion-list">
                               <ul>
                                 <li>DERECHO SINDICAL</li>
@@ -1453,7 +1648,8 @@
 
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary btn-carrera" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-secondary btn-carrera"
+                        data-bs-dismiss="modal">Cerrar</button>
                     </div>
                   </div>
                 </div>
@@ -1470,13 +1666,450 @@
   <!-- /Carreras -->
 
 
+  <!-- Posgrados -->
+  <section id="posgrados" href="#posgrados" class="my-5 custom-padding custom-margin " data-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center text-uppercase ">
+        <small class="subTituloMain" data-aos="fade-left" data-aos-delay="800">
+          Conoce nuestros
+        </small>
+        <h2 id="title-carrerasSec" data-aos="fade-left" data-aos-delay="800">Posgrados</h2>
+      </div>
+    </div>
+
+    <div class="row d-flex">
+
+
+      <!-- Maestria Educacion -->
+      <div class="col-md-4 mb-4">
+        <div class="card-posgrados h-100">
+          <img src="assets/images/carreras/pedagogia.webp" class="card-img-top" alt="MaestriaEducacion">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">MAESTRÍA EN EDUCACIÓN</h5>
+            <div class="badges mb-2">
+              <span class="badge text-bg-primary">RVOE ES/019/2015</span>
+            </div>
+            <p class="card-text d-none d-md-block">
+              Formar maestros en educación que cuenten con competencias fundamentales para planear y dirigir los procesos educativos a partir del análisis,
+              comprensión y desarrollo del acto educativo desde una visión holística con la finalidad de establecer alternativas de intervención a través de la 
+              orientación educativa, la investigación, la evaluación institucional y la docecnia para propoiciar el logro de la calidad total en educación.
+            </p>
+
+
+            <!-- inicio btn -->
+
+            <!-- Button trigger modal -->
+            <div class="mt-auto d-flex justify-content-center align-items-end">
+              <button type="button" class=" btn btn-primary btn-posgrado" data-bs-toggle="modal"
+                data-bs-target="#modal_maestriaEducacion">
+                Ver plan de estudios
+              </button>
+            </div>
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal_maestriaEducacion" data-bs-backdrop="static" data-bs-keyboard="false"
+              tabindex="-1" aria-labelledby="staticBackdropLabelMasterEducation" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabelMasterEducation">Plan de estudios <strong>Maestría en Educación</strong>
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!--Content-->
+                    <div class="accordion" id="accordionPanelsStayOpenMaestriaEducacion">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOneMaestriaEducacion" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseOneMaestriaEducacion">
+                            PRIMER SEMESTRE
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOneMaestriaEducacion" class="accordion-collapse collapse show"
+                          data-bs-parent="#accordionPanelsStayOpenMaestriaEducacion">
+                          <div class="accordion-body accordion-list">
+                            <ul>
+                              <li>ANÁLISIS DEL PROCESO HISTÓRICO DE LA EDUCACIÓN EN MÉXICO</li>
+                              <li>SOCIOLOGÍA DE LA EDUCACIÓN</li>
+                              <li>EPISTEMOLOGÍA Y EDUCACIÓN</li>
+                              <li>CORRIENTES PEDAGÓGICAS CONTEMPORÁNEAS</li>
+                              <li>TALLER DE INVESTIGACIÓN DOCUMENTAL</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapse2MaestriaEducacion" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapse2MaestriaEducacion">
+                            SEGUNDO SEMESTRE
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapse2MaestriaEducacion" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionPanelsStayOpenMaestriaEducacion">
+                          <div class="accordion-body accordion-list">
+                            <ul>
+                              <li>PSICOLOGÍA EDUCATIVA</li>
+                              <li>DESARROLLO HUMANO</li>
+                              <li>PSICOTÉCNICA</li>
+                              <li>ORIENTACIÓN EDUCATIVA</li>
+                              <li>METODOLOGÍA DE LA INVERSIÓN EDUCATIVA</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapse3MaestriaEducacion" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapse3MaestriaEducacion">
+                            TERCER SEMESTRE
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapse3MaestriaEducacion" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionPanelsStayOpenMaestriaEducacion">
+                          <div class="accordion-body accordion-list">
+                            <ul>
+                              <li>PRÁCTICA DOCENTE Y VALORES</li>
+                              <li>PLANEACIÓN DIDÁCTICA</li>
+                              <li>DINÁMICA DE GRUPOS</li>
+                              <li>EVALUACIÓN Y PRÁCTICA DOCENTE</li>
+                              <li>SEMINARIO DE TESIS</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapse4MaestriaEducacion" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapse4MaestriaEducacion">
+                            CUARTO SEMESTRE
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapse4MaestriaEducacion" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionPanelsStayOpenMaestriaEducacion">
+                          <div class="accordion-body accordion-list">
+                            <ul>
+                              <li>INTRODUCCIÓN A LA ADMINISTRACIÓN EDUCATIVA</li>
+                              <li>ADMINISTRACIÓN Y GESTIÓN EDUCATIVA</li>
+                              <li>EDUCACIÓN Y CALIDAD</li>
+                              <li>EVALUACIÓN INSTITUCIONAL</li>
+                              <li>SEMINARIO DE TITULACIÓN</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-carrera"
+                      data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- fin modal -->
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Maestria Derecho Laboral -->
+      <div class="col-md-4 mb-4">
+        <div class="card-posgrados h-100">
+          <img src="assets/images/carreras/pedagogia.webp" class="card-img-top" alt="MaestriaEducacion">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">MAESTRÍA EN DERECHO LABORAL</h5>
+            <div class="badges mb-2">
+              <span class="badge text-bg-primary">RVOE ES/042/2015</span>
+            </div>
+            <p class="card-text d-none d-md-block">
+             Formar maestros en material laboral, que cuenten con las competencias fundamentales para el análisis y desarrollo de procesos y juicios 
+             vinculados con el derecho laboral con uin alto nivel técnico y profesional, que le permita desempeñarse con eficiencia y eficacia en el desarrollo, interpretación
+             y aplicación de las leyes y mecanismos laborales.
+            </p>
+
+
+            <!-- inicio btn -->
+
+            <!-- Button trigger modal -->
+            <div class="mt-auto d-flex justify-content-center align-items-end">
+              <button type="button" class=" btn btn-primary btn-posgrado" data-bs-toggle="modal"
+                data-bs-target="#modal_maestriaDerechoLaboral">
+                Ver plan de estudios
+              </button>
+            </div>
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal_maestriaDerechoLaboral" data-bs-backdrop="static" data-bs-keyboard="false"
+              tabindex="-1" aria-labelledby="staticBackdropLabelMasterEducation" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabelMasterEducation">Plan de estudios <strong>Maestría en Derecho Laboral</strong>
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!--Content-->
+                    <div class="accordion" id="accordionPanelsStayOpenMaestriaDerechoLaboral">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOneMaestriaDerechoLaboral" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseOneMaestriaDerechoLaboral">
+                            PRIMER SEMESTRE
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOneMaestriaDerechoLaboral" class="accordion-collapse collapse show"
+                          data-bs-parent="#accordionPanelsStayOpenMaestriaDerechoLaboral">
+                          <div class="accordion-body accordion-list">
+                            <ul>
+                              <li>HISTORIA DEL DERECHO DEL TRABAJO</li>
+                              <li>DERECHO INTERNACIONAL DEL TRABAJO</li>
+                              <li>METODOLOGÍA JURÍDICA</li>
+                              <li>LA ADMINISTRACIÓN PÚBLICA Y EL DERECHO DEL TRABAJO</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapse2MaestriaDerechoLaboral" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapse2MaestriaDerechoLaboral">
+                            SEGUNDO SEMESTRE
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapse2MaestriaDerechoLaboral" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionPanelsStayOpenMaestriaDerechoLaboral">
+                          <div class="accordion-body accordion-list">
+                            <ul>
+                              <li>DERECHO INDIVIDUAL DEL TRABAJO</li>
+                              <li>DERECHO LABORAL BUROCRÁTICO</li>
+                              <li>DERECHO DE LAS MUJERES TRABAJADORAS, DE LOS MENORES Y TRABAJOS ESPECIALES</li>
+                              <li>DERECHO COLECTIVO DEL TRABAJO</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapse3MaestriaDerechoLaboral" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapse3MaestriaDerechoLaboral">
+                            TERCER SEMESTRE
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapse3MaestriaDerechoLaboral" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionPanelsStayOpenMaestriaDerechoLaboral">
+                          <div class="accordion-body accordion-list">
+                            <ul>
+                              <li>DERECHO PROCESAL DEL TRABAJO</li>
+                              <li>DERECHO PROCESAL DE LOS CONFLICTOS DEL TRABAJO BUROCRÁTICO</li>
+                              <li>PRUEBAS EN MATERIA LABORAL</li>
+                              <li>SEMINARIO DE TESIS</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapse4MaestriaDerechoLaboral" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapse4MaestriaDerechoLaboral">
+                            CUARTO SEMESTRE
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapse4MaestriaDerechoLaboral" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionPanelsStayOpenMaestriaDerechoLaboral">
+                          <div class="accordion-body accordion-list">
+                            <ul>
+                              <li>PRÁCTICA FORENSE DE DERECHO LABORAL</li>
+                              <li>AMPARO LABORAL</li>
+                              <li>REGÍMENES DE SEGURIDAD SOCIAL</li>
+                              <li>SEMINARIO DE TITULACIÓN</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-carrera"
+                      data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- fin modal -->
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Especalidad en juicios orales -->
+      <div class="col-md-4 mb-4">
+        <div class="card-posgrados h-100">
+          <img src="assets/images/carreras/pedagogia.webp" class="card-img-top" alt="MaestriaEducacion">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">ESPECIALIDAD EN JUICIOS ORALES</h5>
+            <div class="badges mb-2">
+              <span class="badge text-bg-primary">RVOE ES/020/2015</span>
+            </div>
+            <p class="card-text d-none d-md-block">
+              Formar especialistas en el ámbito del derecho penal que cuente con las competencias fundamentales para participar, desde la función
+              de la defensoría en el análisis, adaptación, incorporación y desarrollo de los juicios orales en el Sistema Procesal Penal Acusatorio y Adversarial.
+            </p>
+
+
+            <!-- inicio btn -->
+
+            <!-- Button trigger modal -->
+            <div class="mt-auto d-flex justify-content-center align-items-end">
+              <button type="button" class=" btn btn-primary btn-posgrado" data-bs-toggle="modal"
+                data-bs-target="#modal_juiciosOrales">
+                Ver plan de estudios
+              </button>
+            </div>
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal_juiciosOrales" data-bs-backdrop="static" data-bs-keyboard="false"
+              tabindex="-1" aria-labelledby="staticBackdropLabelMasterEducation" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabelMasterEducation">Plan de estudios <strong>Especialidad en Juicios Orales</strong>
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!--Content-->
+                    <div class="accordion" id="accordionPanelsStayOpenJuiciosOrales">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOneJuiciosOrales" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseOneJuiciosOrales">
+                            PRIMER CUATRIMESTRE
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOneJuiciosOrales" class="accordion-collapse collapse show"
+                          data-bs-parent="#accordionPanelsStayOpenJuiciosOrales">
+                          <div class="accordion-body accordion-list">
+                            <ul>
+                              <li>BASES Y PRINCIPIOS DEL SISTEMA PROCESAL PENAL ACUSATORIO</li>
+                              <li>SISTEMA DE JUSTICIA PENAL</li>
+                              <li>ETAPAS DEL SISTEMA PROCESAL PENAL ACUSATORIO</li>
+                              <li>DERECHOS HUMANOS</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapse2JuiciosOrales" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapse2JuiciosOrales">
+                            SEGUNDO CUATRIMESTRE
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapse2JuiciosOrales" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionPanelsStayOpenJuiciosOrales">
+                          <div class="accordion-body accordion-list">
+                            <ul>
+                              <li>DESARROLLO DE LA INVESTIGACIÓN</li>
+                              <li>NEGOCIACIÓN DE LA INVESTIGACIÓN</li>
+                              <li>NEGOCIACIÓN Y PROCEDIMIENTO ABREVIADO</li>
+                              <li>JUICIO ORAL</li>
+                              <li>IMPUGNACIÓN</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapse3JuiciosOrales" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapse3JuiciosOrales">
+                            TERCER CUATRIMESTRE
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapse3JuiciosOrales" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionPanelsStayOpenJuiciosOrales">
+                          <div class="accordion-body accordion-list">
+                            <ul>
+                              <li>LA ETAPA INTERMEDIA Y EL DEFENSOR EN EL JUICIO ORAL</li>
+                              <li>RECURSOS HUMANOS EN EL SISTEMA ACUSATORIO</li>
+                              <li>EJECUCIÓN DE SANCIONES EN LA DEFENSA</li>
+                              <li>SEMINARIO DE TITULACIÓN</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-carrera"
+                      data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- fin modal -->
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- /posgrados -->
+
+
   <!-- Aspirantes -->
-  <section id="aspirantes" class=" section-bg-blue custom-padding custom-margin" data-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out" data-aos-once="false">
+  <section id="aspirantes" class=" section-bg-blue custom-padding custom-margin" data-aos="fade-down"
+    data-aos-delay="400" data-aos-easing="ease-in-out" data-aos-once="false">
     <div class="row">
       <h2 class="subTituloMain mb-5" data-aos="fade-left" data-aos-delay="800">ASPIRANTES</h2>
 
-      <div class="col-xs-12 col-md-6">
-        <img src="assets/images/aspirantes_SVG.svg" alt="aspirantes" class="img-fluid" data-aos="fade-right" data-aos-delay="800">
+      <div class="col-xs-12 col-md-6 grid-center">
+        <img src="assets/images/aspirantes_SVG.svg" alt="aspirantes" class="img-fluid" data-aos="fade-right"
+          data-aos-delay="800">
       </div>
 
       <div class="col-xs-12 col-md-6">
@@ -1509,7 +2142,8 @@
 
 
   <!-- Becas-->
-  <section id="becas" class="my-5 custom-padding custom-margin" data-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out" data-aos-once="false">
+  <section id="becas" class="my-5 custom-padding custom-margin" data-aos="fade-down" data-aos-delay="400"
+    data-aos-easing="ease-in-out" data-aos-once="false">
     <div class="container-fluid">
 
       <div class="row d-flex justify-content-center">
@@ -1527,28 +2161,33 @@
                     <tbody>
                       <tr>
                         <th scope="row text-color-primary">1</th>
-                        <td class="py-3 text-color-primary"> Para alumnos de nuevo ingreso: se les apoya con una beca en inscripción y colegiaturas para
+                        <td class="py-3 text-color-primary"> Para alumnos de nuevo ingreso: se les apoya con una beca en
+                          inscripción y colegiaturas para
                           que su inicio en esta casa de estudios la preocupación sea alcanzar el éxito y formación de
                           calidad.</td>
                       </tr>
                       <tr>
                         <th scope="row text-color-primary">2</th>
-                        <td class="py-3 text-color-primary">Para los mejores alumnos de semestres avanzados a partir de un promedio de 8.5 se mantienen
+                        <td class="py-3 text-color-primary">Para los mejores alumnos de semestres avanzados a partir de
+                          un promedio de 8.5 se mantienen
                           los descuentos en colegiaturas e inscripciones</td>
                       </tr>
                       <tr>
                         <th scope="row text-color-primary">3</th>
-                        <td class="py-3 text-color-primary">Tenemos más del 70% de la matrícula de la universidad becado en todas nuestras licenciaturas
+                        <td class="py-3 text-color-primary">Tenemos más del 70% de la matrícula de la universidad becado
+                          en todas nuestras licenciaturas
                           y posgrados.</td>
                       </tr>
                       <tr>
                         <th scope="row">4</th>
-                        <td class="py-3">En cada ciclo escolar se hace entrega de un Diploma de Reconocimiento al mérito académico
+                        <td class="py-3">En cada ciclo escolar se hace entrega de un Diploma de Reconocimiento al mérito
+                          académico
                           para publicarse en el cuadro de Honor.</td>
                       </tr>
                       <tr>
                         <th scope="row">5</th>
-                        <td class="py-3">Actualmente participa en el PROGRAMA EMERGENTE DE OFERTA EDUCATIVA (PEOE) 2020-2021,
+                        <td class="py-3">Actualmente participa en el PROGRAMA EMERGENTE DE OFERTA EDUCATIVA (PEOE)
+                          2024-2025,
                           iniciativa de la Dirección General de Educación Universitaria para que en conjunto apoyar a la
                           juventud del Estado en alcanzar el éxito en universidad con reconocimiento por su trayectoria
                           (puedes consultar los descuentos aplicados a éste programa en la sección de costos y en la
@@ -1559,8 +2198,9 @@
                   </table>
                 </div>
               </div>
-              <div class="col-md-4">
-                <img src="assets/images/becas_SVG.svg" alt="becas" class="img-fluid" data-aos="fade-right" data-aos-delay="800">
+              <div class="col-md-4 grid-center">
+                <img src="assets/images/becas_SVG.svg" alt="becas" class="img-fluid" data-aos="fade-right"
+                  data-aos-delay="800">
               </div>
 
             </div>
@@ -1577,11 +2217,10 @@
   <!-- Costos -->
 
   <section id="costos" class="section-bg-blue custom-padding custom-margin" data-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out" data-aos-once="false">
-    <div class="">
-
+    <div>
       <div class="row">
         <h2 class="subTituloMain mb-5" data-aos="fade-left" data-aos-delay="800">COSTOS</h2>
-        <div class="col-xs-12 col-md-6">
+        <div class="col-xs-12 col-md-6 grid-center">
           <div class="" data-aos="fade-right" data-aos-delay="800">
             <!-- <img src="assets/images/costos_SVG.svg" alt="costos" class="img-fluid"> -->
             <img src="assets/images/costos-1.webp" alt="costos" class="img-fluid">
@@ -1589,31 +2228,41 @@
           </div>
         </div>
 
-        <div class="col-xs-12 col-md-6">
-          <div class="row d-flex justify-content-center">
+        <div class="col-xs-12 col-md-6 ">
+          <div class="row ">
             <h4 class="subTitulo mb-5" data-aos="fade-left" data-aos-delay="800">
-              Ofrecemos diferentes precios:
+              CONOCE NUESTROS PRECIOS:
             </h4>
-            <ul id="listaAspirantes" data-aos="fade-up" data-aos-delay="800">
-              <li>Costos en general para licenciaturas con incorporación a la Secretaría del Estado de Veracruz:
+            <div id="listaAspirantes" class=" grid-center" data-aos="fade-up" data-aos-delay="800">
+              <div class="row container bg-green mb-2">
+                <h5>Costos en general para licenciaturas con incorporación a la Secretaría del Estado de Veracruz:</h5>
+                  <ul class="py-2">
+                    <li>INSCRIPCIÓN ANUAL $ 1,700.00</li>
+                    <li>COLEGIATURA MENSUAL $ 950.00</li>
+                  </ul>
+              </div>
+              <!-- <li>Costos en general para licenciaturas con incorporación a la Secretaría del Estado de Veracruz:
                 <ul class="py-2">
                   <li>INSCRIPCIÓN ANUAL $ 1,700.00</li>
                   <li>COLEGIATURA MENSUAL $ 950.00</li>
                 </ul>
-              </li>
-              <li>Costo en general para la licenciatura en Derecho del Sistema incorporado UNAM:
-                <ul class="py-2">
-                  <li> INSCRIPCIÓN ANUAL $ 2,750.00 </li>
-                  <li>COLEGIATURA MENSUAL $ 1,000.00</li>
-                </ul>
-              </li>
-              <li>Posgrados
-                <ul class="py-2">
-                  <li>INSCRIPCIÓN SEMESTRAL O CUATRIMESTRE: $1600.00</li>
-                  <li>COLEGIATURA MENSUAL: $2000.00</li>
-                </ul>
-              </li>
-            </ul>
+              </li> -->
+              <div class="row container bg-green mb-2">
+                <h5>Costo en general para la licenciatura en Derecho del Sistema incorporado UNAM:</h5>
+                  <ul class="py-2">
+                    <li> INSCRIPCIÓN ANUAL $ 2,750.00 </li>
+                    <li>COLEGIATURA MENSUAL $ 1,000.00</li>
+                  </ul>
+                
+              </div>
+              <div class="row container bg-green">
+                <h5>Posgrados</h5>
+                  <ul class="py-2">
+                    <li>INSCRIPCIÓN SEMESTRAL O CUATRIMESTRE: $1600.00</li>
+                    <li>COLEGIATURA MENSUAL: $2000.00</li>
+                  </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1665,13 +2314,62 @@
         </div>
 
         <div class="col-lg-8">
-          <iframe title="mapa-ubicacion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15040.75070080001!2d-96.91310526422077!3d19.533554631130873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85db31f5984c0207%3A0xfa044673e1e23834!2sTeotihuacan%2091%2C%20Sebastian%20Lerdo%20de%20Tejada%2C%2091180%20Xalapa-Enr%C3%ADquez%2C%20Ver.!5e0!3m2!1ses-419!2smx!4v1683221977830!5m2!1ses-419!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          <iframe title="mapa-ubicacion"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15040.75070080001!2d-96.91310526422077!3d19.533554631130873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85db31f5984c0207%3A0xfa044673e1e23834!2sTeotihuacan%2091%2C%20Sebastian%20Lerdo%20de%20Tejada%2C%2091180%20Xalapa-Enr%C3%ADquez%2C%20Ver.!5e0!3m2!1ses-419!2smx!4v1683221977830!5m2!1ses-419!2smx"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
       </div>
 
     </div>
   </section>
+
+
+
+
+  <!-- Social -->
+
+  <!-- <div class="social-buttons">
+    <a href="https://www.facebook.com/" class="btn btn-facebook" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-facebook"></i>
+    </a>
+    <a href="https://twitter.com/" class="btn btn-twitter" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-twitter"></i>
+    </a>
+    <a href="https://www.instagram.com/" class="btn btn-instagram" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-instagram"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/" class="btn btn-linkedin" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-linkedin"></i>
+    </a>
+  </div>
+   -->
+
+
+   <!-- Botón flotante de redes sociales -->
+<div id="social" class="social-buttons">
+  <button class="btn btn-main" id="main-btn">
+    <i class="bi bi-plus"></i>
+  </button>
+  <div id="extra-buttons" class="d-none">
+    <a href="https://www.facebook.com/UniversidadPaccioliXalapaOficial" class="btn btn-facebook" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-facebook"></i>
+    </a>
+    <a href="https://www.instagram.com/pacciolixalapa" class="btn btn-instagram" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-instagram"></i>
+    </a>
+    <a href="https://www.youtube.com/@pacciolixalapa8469" class="btn btn-youtube" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-youtube"></i>
+    </a>
+    <a href="https://wa.me/#" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  </div>
+</div>
+
+
+
 
 
   <!--::::Footer::::::-->
@@ -1700,10 +2398,10 @@
       <div class="box">
         <h2>SIGUENOS</h2>
         <div class="red-social">
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-instagram"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-youtube"></a>
+          <a href="https://www.facebook.com/UniversidadPaccioliXalapaOficial" class="fa fa-facebook" target="_blank" rel="noopener noreferrer"></a>
+          <a href="https://www.instagram.com/pacciolixalapa" class="fa fa-instagram" target="_blank" rel="noopener noreferrer"></a>
+          <!-- <a href="#" class="fa fa-twitter" target="_blank" rel="noopener noreferrer"></a> -->
+          <a href="https://www.youtube.com/@pacciolixalapa8469" class="fa fa-youtube" target="_blank" rel="noopener noreferrer"></a>
         </div>
       </div>
     </div>
@@ -1722,10 +2420,17 @@
 
   <!-- /footer -->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script> -->
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="/assets/js/main.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
+
+
+
     AOS.init();
   </script>
 
