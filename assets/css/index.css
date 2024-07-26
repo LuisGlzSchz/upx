@@ -382,7 +382,7 @@ contact .info-item {
 
 #main .carousel-inner img {
     max-height: 100vh;
-    object-fit: cover;
+    object-fit: contain;
   
 }
 
@@ -413,7 +413,7 @@ contact .info-item {
     width: 7rem; 
     height: auto;
   }
-  
+
 
 
   .carousel-indicators {
@@ -1028,6 +1028,9 @@ contact .info-item {
 
 @media (max-width: 576px){
     #social{
+        display: none;
+    }
+    .logo-bottom-left{
         display: none;
     }
 }
