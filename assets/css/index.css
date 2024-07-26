@@ -356,8 +356,7 @@ contact .info-item {
 }
 
 #header img {
-    width: 12rem;
-
+    width: 15rem;
 }
 
 #header {
@@ -365,7 +364,8 @@ contact .info-item {
 }
 
 #logo-nav {
-    padding-left: 5.5rem;
+    padding-left: 1.5rem;
+    /* padding-left: 5.5rem; */
 }
 
 #header.sticky-top {
