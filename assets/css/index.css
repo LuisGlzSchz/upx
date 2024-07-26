@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #1c203f;
+    --primary-color: #0A0921;
     --section-bg: #151F3C;
     --secondary-color: #31386e;
     --translucidPrimary-color: rgb(28, 32, 63, .9);
@@ -11,17 +11,30 @@
     --section-bg-color: #004e74;
 }
 @font-face {
-    font-family: 'Blippo';
-    src: url('../fonts/upx.ttf') format('truetype');
+    font-family: 'Arial Black';
+    src: url('../fonts/ARIALBD1.woff') format('woff'),
+         url('../fonts/ARIALBD1.TTF') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+@font-face {
+    font-family: 'Vintage King';
+    src: url('../fonts/VintageKing.woff') format('woff'),
+         url('../fonts/VintageKing.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'Arial Black', Arial, sans-serif;
 }
 body {
     background-color: var(--bg-color);
     color: var(--primary-color);
     /* color:  rgb(28, 32, 63,0.6); */
 }
-
+.vintage {
+    font-family: 'Vintage King', sans-serif;
+}
 section {
     padding: 75px 5px !important;
     overflow: hidden;
