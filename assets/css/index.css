@@ -10,7 +10,12 @@
     --bg-secondary-color: rgba(187, 207, 36, 0.8);
     --section-bg-color: #004e74;
 }
-
+@font-face {
+    font-family: 'Blippo';
+    src: url('../fonts/upx.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
     background-color: var(--bg-color);
     color: var(--primary-color);
@@ -22,8 +27,9 @@ section {
     overflow: hidden;
 }
 
+
 .custom-card {
-    border: 1px solid #b9ce24;
+    border: 5px solid #b9ce24;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 560px;
@@ -50,14 +56,60 @@ section {
     --bs-nav-link-padding-x: 0;
     --bs-nav-link-padding-y: 0.5rem;
     --bs-nav-link-font-weight: 400;
-    --bs-nav-link-color: var(--primary-color);
-    --bs-nav-link-hover-color: var(--blueSky-color);
+    --bs-nav-link-color: var(--bg-color);
+    --bs-nav-link-hover-color: var(--accent-color);
     --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
     display: flex;
     flex-direction: column;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+}
+.navbar{
+    --bs-navbar-active-color: var(--accent-color);
+}
+
+.dropdown-menu {
+    --bs-dropdown-zindex: 1000;
+    --bs-dropdown-min-width: 10rem;
+    --bs-dropdown-padding-x: 0;
+    --bs-dropdown-padding-y: 0.5rem;
+    --bs-dropdown-spacer: 0.125rem;
+    --bs-dropdown-font-size: 1rem;
+    --bs-dropdown-color: var(--bs-body-color);
+    --bs-dropdown-bg: var(--bs-body-bg);
+    --bs-dropdown-border-color: var(--bs-border-color-translucent);
+    --bs-dropdown-border-radius: var(--bs-border-radius);
+    --bs-dropdown-border-width: var(--bs-border-width);
+    --bs-dropdown-inner-border-radius: calc(var(--bs-border-radius) - var(--bs-border-width));
+    --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
+    --bs-dropdown-divider-margin-y: 0.5rem;
+    --bs-dropdown-box-shadow: var(--bs-box-shadow);
+    --bs-dropdown-link-color: var(--bs-body-color);
+    --bs-dropdown-link-hover-color: var(--accent-color);
+    --bs-dropdown-link-hover-bg: var(--primary-color);
+    --bs-dropdown-link-active-color: #fff;
+    --bs-dropdown-link-active-bg: var(--accent-color);
+    --bs-dropdown-link-disabled-color: var(--bs-tertiary-color);
+    --bs-dropdown-item-padding-x: 1rem;
+    --bs-dropdown-item-padding-y: 0.25rem;
+    --bs-dropdown-header-color: #6c757d;
+    --bs-dropdown-header-padding-x: 1rem;
+    --bs-dropdown-header-padding-y: 0.5rem;
+    position: absolute;
+    z-index: var(--bs-dropdown-zindex);
+    display: none;
+    min-width: var(--bs-dropdown-min-width);
+    padding: var(--bs-dropdown-padding-y) var(--bs-dropdown-padding-x);
+    margin: 0;
+    font-size: var(--bs-dropdown-font-size);
+    color: var(--bs-dropdown-color);
+    text-align: left;
+    list-style: none;
+    background-color: var(--bs-dropdown-bg);
+    background-clip: padding-box;
+    border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);
+    border-radius: var(--bs-dropdown-border-radius);
 }
 
 
@@ -291,7 +343,7 @@ contact .info-item {
 }
 
 #header img {
-    width: 50px;
+    width: 10rem;
 
 }
 
@@ -475,7 +527,7 @@ contact .info-item {
 .pie-pagina {
     width: 100%;
     /* background-color: #0a141d; */
-    background-color: var(--primary-color);
+    background-color: var(--section-bg);
 }
 
 .pie-pagina .grupo-1 {
@@ -863,7 +915,7 @@ contact .info-item {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: #007bff;
+    background-color: var(--accent-color);
     color: #fff;
     font-size: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -877,9 +929,17 @@ contact .info-item {
 }
 
 .social-buttons #extra-buttons {
-    display: none;
+    max-height: 0;
+    /* overflow: hidden; */
     flex-direction: column;
     margin-top: 10px;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.social-buttons #extra-buttons.show {
+    max-height: 300px; /* Ajusta esto según la altura máxima de los botones */
+    opacity: 1;
 }
 
 .social-buttons #extra-buttons a {

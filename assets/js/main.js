@@ -1,22 +1,10 @@
-// document.getElementById('main-btn').addEventListener('click', function() {
-//     var extraButtons = document.getElementById('extra-buttons');
-//     if (extraButtons.classList.contains('d-none')) {
-//       extraButtons.classList.remove('d-none');
-//       extraButtons.style.display = 'flex';
-//     } else {
-//       extraButtons.classList.add('d-none');
-//       extraButtons.style.display = 'none';
-//     }
-//   });
 document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('main-btn').addEventListener('click', function() {
       var extraButtons = document.getElementById('extra-buttons');
-      if (extraButtons.classList.contains('d-none')) {
-          extraButtons.classList.remove('d-none');
-          extraButtons.style.display = 'flex';
+      if (extraButtons.classList.contains('show')) {
+          extraButtons.classList.remove('show');
       } else {
-          extraButtons.classList.add('d-none');
-          extraButtons.style.display = 'none';
+          extraButtons.classList.add('show');
       }
   });
 });
