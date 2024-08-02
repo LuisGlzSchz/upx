@@ -1084,25 +1084,26 @@ label a{
 }
 
 .bg-aspirantes{
-    background-image: url('assets/images/aspirantes/bgAspirantes.png');
+    background-image: url('../images/aspirantes/bgAspirantes.png');
+
     background-size: cover;
     background-position: center;
 }
 
 .bg-becas{
-    background-image: url('assets/images/bgBecas.jpg');
+    background-image: url('../images/bgBecas.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .bg-costos{
-    background-image: url('assets/images/bgCostos.png');
+    background-image: url('../images/bgCostos.png');
     background-size: cover;
     background-position: center;
 }
 
 .bg-nosotros{
-    background-image: url('assets/images/bgNosotros2.png');
+    background-image: url('../images/bgNosotros2.png');
     background-size: cover;
     background-position: center;
 }
