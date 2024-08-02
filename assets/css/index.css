@@ -39,7 +39,12 @@ section {
     padding: 75px 5px !important;
     overflow: hidden;
 }
-
+.italic{
+    font-style: italic;
+}
+.color-green{
+    color: var(--accent-color) !important;
+}
 
 .custom-card {
     border: 5px solid #b9ce24;
@@ -56,6 +61,11 @@ section {
     border-radius: 1.5rem;
     padding: 1rem;
     font-weight: 600;
+}
+.bg-blue{
+    background-color: var(--primary-color);
+    border-radius: 1.5rem;
+    padding: 1.2rem;
 }
 .container-rounded{
     border-radius: 1.5rem;
@@ -127,7 +137,7 @@ section {
 
 
 /*Ubicacion*/
-#ubicacion img {
+#ubicacion .icon img {
     width: 2rem;
     height: 2rem;
 }
@@ -537,9 +547,16 @@ contact .info-item {
     opacity: var(--bs-btn-close-opacity);
 }
 
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: var(--accent-color);
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(187, 207, 36, 0.25);
+}
 
 /* Login */
-.form-control {
+/* .form-control {
     display: block;
     width: 15%;
     padding: 0.375rem 0.75rem;
@@ -555,7 +572,7 @@ contact .info-item {
     appearance: none;
     border-radius: var(--bs-border-radius);
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
+} */
 
 
 
@@ -1026,7 +1043,10 @@ contact .info-item {
     transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
+.ikal img{
+    width: 12rem;
+ }
+ 
 @media (max-width: 576px){
     #social{
         display: none;
@@ -1034,4 +1054,8 @@ contact .info-item {
     .logo-bottom-left{
         display: none;
     }
+    .ikal img{
+        display: none;
+     }
 }
+
