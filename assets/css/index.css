@@ -64,8 +64,8 @@ section {
 }
 .bg-blue{
     background-color: var(--primary-color);
-    border-radius: 1.5rem;
-    padding: 1.2rem;
+    /* border-radius: 1.5rem;
+    padding: 1.2rem; */
 }
 .container-rounded{
     border-radius: 1.5rem;
