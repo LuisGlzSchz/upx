@@ -4,6 +4,8 @@ use PHPMailer\PHPMailer\Exception;
 
 require 'vendor/autoload.php';
 
+define('APP_RUNNING', true);
+$config = require 'config/config.php';
 
 $config = require 'config/config.php';
 
@@ -38,11 +40,11 @@ try {
                             <td style='padding: 8px; border: 1px solid #ddd;'>$nombre</td>
                         </tr>
                         <tr>
-                            <td style='padding: 8px; border: 1px solid #ddd;'><strong>Correo Electrónico:</strong></td>
+                            <td style='padding: 8px; border: 1px solid #ddd;'><strong>Correo Electronico:</strong></td>
                             <td style='padding: 8px; border: 1px solid #ddd;'>$email</td>
                         </tr>
                         <tr>
-                            <td style='padding: 8px; border: 1px solid #ddd;'><strong>Teléfono:</strong></td>
+                            <td style='padding: 8px; border: 1px solid #ddd;'><strong>Telefono:</strong></td>
                             <td style='padding: 8px; border: 1px solid #ddd;'>$telefono</td>
                         </tr>
                         <tr>
@@ -57,8 +59,9 @@ try {
     header('Location: success.html'); 
     exit();
 } catch (Exception $e) {
-
-    header('Location: index.html');
+    error_log('Error al enviar correo: ' . $e->getMessage());
+    header('Location: index.php?error=true');
     exit();
 }
+
 ?>
