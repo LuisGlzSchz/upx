@@ -9,42 +9,50 @@
     --blueSky-color: #0071BC;
     --bg-secondary-color: rgba(187, 207, 36, 0.8);
     --section-bg-color: #004e74;
-    --bg-blue-card-body: rgb(10, 9, 33, 0.8);   
+    --bg-blue-card-body: rgb(10, 9, 33, 0.8);
 }
+
 @font-face {
     font-family: 'Arial Black';
     src: url('../fonts/ARIALBD1.woff') format('woff'),
-         url('../fonts/ARIALBD1.TTF') format('truetype');
+        url('../fonts/ARIALBD1.TTF') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Vintage King';
     src: url('../fonts/VintageKing.woff') format('woff'),
-         url('../fonts/VintageKing.TTF') format('truetype');
+        url('../fonts/VintageKing.TTF') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
 body {
     font-family: 'Arial Black', Arial, sans-serif;
     color: var(--primary-color);
 }
+
 body {
     background-color: var(--bg-color);
     color: var(--primary-color);
     /* color:  rgb(28, 32, 63,0.6); */
 }
+
 .vintage {
     font-family: 'Vintage King', sans-serif;
 }
+
 section {
     padding: 75px 5px !important;
     overflow: hidden;
 }
-.italic{
+
+.italic {
     font-style: italic;
 }
-.color-green{
+
+.color-green {
     color: var(--accent-color) !important;
 }
 
@@ -57,19 +65,21 @@ section {
     padding: .25rem;
 }
 
-.bg-green{
+.bg-green {
     background-color: var(--accent-color);
     color: var(--primary-color);
     border-radius: 1.5rem;
     padding: 1rem;
     font-weight: 600;
 }
-.bg-blue{
+
+.bg-blue {
     background-color: var(--primary-color);
     /* border-radius: 1.5rem;
     padding: 1.2rem; */
 }
-.container-rounded{
+
+.container-rounded {
     border-radius: 1.5rem;
     font-weight: 400;
 }
@@ -91,7 +101,8 @@ section {
     margin-bottom: 0;
     list-style: none;
 }
-.navbar{
+
+.navbar {
     --bs-navbar-active-color: var(--accent-color);
 }
 
@@ -340,12 +351,6 @@ contact .info-item {
     font-size: 1.2rem;
 }
 
-
-#nosotros {
-    /* background-color: rgb(28, 32, 63,0.8); */
-    /* margin-top: 20%; */
-}
-
 .content-bg {
     padding: 100px;
     background-color: white;
@@ -398,7 +403,7 @@ contact .info-item {
 #main .carousel-inner img {
     max-height: 100vh;
     object-fit: contain;
-  
+
 }
 
 #carousel {
@@ -412,7 +417,7 @@ contact .info-item {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgb(0, 0, 0, 0.5);
+    /* background-color: rgb(0, 0, 0, 0.5); */
     color: white;
 }
 
@@ -423,15 +428,15 @@ contact .info-item {
 
 .logo-bottom-left {
     position: absolute;
-    bottom: 1rem; 
-    left: 2.3rem; 
-    width: 7rem; 
+    bottom: 1rem;
+    left: 2.3rem;
+    width: 7rem;
     height: auto;
-  }
+}
 
 
 
-  .carousel-indicators {
+.carousel-indicators {
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -441,9 +446,9 @@ contact .info-item {
     list-style: none;
     padding-left: 0;
     margin: 0;
-  }
-  
-  .carousel-indicators li {
+}
+
+.carousel-indicators li {
     width: 12px;
     height: 12px;
     margin: 0 4px;
@@ -451,11 +456,12 @@ contact .info-item {
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.6s ease;
-  }
-  
-  .carousel-indicators .active {
+}
+
+.carousel-indicators .active {
     background-color: #fff;
-  }
+}
+
 /* aspirantes */
 
 #aspirantes img {
@@ -473,7 +479,7 @@ contact .info-item {
     max-width: 75%;
 }
 
-@media (max-width: 1300px){
+@media (max-width: 1300px) {
     #costos img {
         max-width: 95%;
     }
@@ -518,7 +524,7 @@ contact .info-item {
 .accordion-body {
     color: black;
     background-color: white;
-  
+
 }
 
 
@@ -558,27 +564,6 @@ contact .info-item {
     outline: 0;
     box-shadow: 0 0 0 .25rem rgba(187, 207, 36, 0.25);
 }
-
-/* Login */
-/* .form-control {
-    display: block;
-    width: 15%;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--bs-body-color);
-    background-color: var(--bs-body-bg);
-    background-clip: padding-box;
-    border: var(--bs-border-width) solid var(--bs-border-color);
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: var(--bs-border-radius);
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-} */
-
-
 
 #footer {
     background-color: var(--primary-color);
@@ -691,7 +676,7 @@ contact .info-item {
 
 .contact .info-item {
     width: 100%;
-    background-color: rgb(255, 255, 255,0.9);
+    background-color: rgb(255, 255, 255, 0.9);
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px;
@@ -702,21 +687,6 @@ contact .info-item {
     margin-bottom: 0;
 }
 
-/* .contact .info-item i {
-    font-size: 20px;
-    color: #fff;
-    float: left;
-    width: 44px;
-    height: 44px;
-    background-color: rgba(255, 255, 255, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    transition: all 0.3s ease-in-out;
-    margin-right: 15px;
-  }
-   */
 .contact .info-item h4 {
     padding: 0;
     font-size: 20px;
@@ -730,10 +700,6 @@ contact .info-item {
     font-size: 14px;
 }
 
-/* .contact .info-item:hover i {
-    background: #fff;
-    color: var(--color-primary);
-  } */
 .section-bg-blue {
     background-color: var(--section-bg);
     color: var(--bg-color);
@@ -803,11 +769,12 @@ contact .info-item {
 
 
 .table-striped>tbody>tr:nth-of-type(odd)>* {
-    --bs-table-accent-bg:  rgb(10, 9, 33, 0.8) !important;
+    --bs-table-accent-bg: rgb(10, 9, 33, 0.8) !important;
     color: var(--bg-color) !important;
 }
+
 .table-striped>tbody>tr:nth-of-type(odd)>* {
-    --bs-table-accent-bg:  rgb(10, 9, 33, 0.8) !important;
+    --bs-table-accent-bg: rgb(10, 9, 33, 0.8) !important;
 
 }
 
@@ -938,9 +905,11 @@ contact .info-item {
     display: grid;
     place-items: center;
 }
-.card-title{
+
+.card-title {
     text-align: center;
 }
+
 .card-posgrados {
     --bs-card-spacer-y: 1rem;
     --bs-card-spacer-x: 1rem;
@@ -1028,7 +997,8 @@ contact .info-item {
     height: 50px;
     text-align: center;
     border-radius: 50%;
-    background-color: white; /* Fondo blanco */
+    background-color: white;
+    /* Fondo blanco */
     color: var(--primary-color);
     font-size: 24px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1067,74 +1037,77 @@ contact .info-item {
 }
 
 
-.ikal img{
+.ikal img {
     width: 12rem;
- }
- 
-@media (max-width: 576px){
-    #social{
-        display: none;
-    }
-    .logo-bottom-left{
-        display: none;
-    }
-    .ikal img{
-        display: none;
-     }
 }
 
-.badges a{
+@media (max-width: 576px) {
+    #social {
+        display: none;
+    }
+
+    .logo-bottom-left {
+        display: none;
+    }
+
+    .ikal img {
+        display: none;
+    }
+}
+
+.badges a {
     color: white;
     text-decoration: none;
 }
-label a{
+
+label a {
     color: var(--accent-color);
     text-decoration: none;
 }
 
-.bg-aspirantes{
+.bg-aspirantes {
     background-image: url('../images/aspirantes/bgAspirantes.png');
 
     background-size: cover;
     background-position: center;
 }
 
-.bg-becas{
+.bg-becas {
     background-image: url('../images/bgBecas.jpg');
     background-size: cover;
     background-position: center;
 }
 
-.bg-costos{
+.bg-costos {
     background-image: url('../images/bgCostos.png');
     background-size: cover;
     background-position: center;
 }
 
-.bg-nosotros{
+.bg-nosotros {
     background-image: url('../images/bgNosotros2.png');
     background-size: cover;
     background-position: center;
 }
 
-.card-bg{
-    background-color: rgb(10, 9, 33,0.8);
+.card-bg {
+    background-color: rgb(10, 9, 33, 0.8);
     color: var(--bg-color);
     border-radius: 1.5rem;
 }
 
-.bg-translucid-withe{
-    background-color: rgb(255, 255, 255,0.4);
-    /* color: var(--bg-color); */
+.bg-translucid-withe {
+    background-color: rgb(255, 255, 255, 0.4);
     border-radius: 1.5rem;
 }
 
 .table-striped>tbody>tr:nth-of-type(odd)>* {
-    --bs-table-accent-bg:  rgb(10, 9, 33, 0.8) !important;
+    --bs-table-accent-bg: rgb(10, 9, 33, 0.8) !important;
     color: var(--bg-color) !important;
 }
+
 .table-striped>tbody>tr:nth-of-type(odd)>* {
-    --bs-table-accent-bg:  rgb(10, 9, 33, 0.8) !important;
+    --bs-table-accent-bg: rgb(10, 9, 33, 0.8) !important;
 }
 
 .table>:not(caption)>*>* {
@@ -1144,13 +1117,13 @@ label a{
     border-bottom-width: var(--bs-border-width);
     box-shadow: inset 0 0 0 9999px var(--bs-table-bg-state, var(--bs-table-bg-type, var(--bs-table-accent-bg)));
 }
-/* Estilo para el botón habilitado */
+
 .btn-posgrado:not(:disabled) {
     cursor: pointer;
     opacity: 1;
 }
 
-/* Estilo para el botón deshabilitado */
+
 .btn-posgrado:disabled {
     cursor: not-allowed;
     opacity: 0.5;
