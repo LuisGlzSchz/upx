@@ -22,7 +22,7 @@ try {
     $mail->Port       = $config['port'];
 
 
-    $mail->setFrom($config['username'], 'Formulario de Contacto');
+    $mail->setFrom($config['username'], 'Origen: upx.edu.com Página Web');
     $mail->addAddress($config['username']); 
 
 
@@ -32,7 +32,7 @@ try {
     $mensaje = htmlspecialchars($_POST['mensaje']);
 
     $mail->isHTML(true);
-    $mail->Subject = 'Nuevo mensaje de contacto';
+    $mail->Subject = 'Nuevo mensaje desde la pagina web';
     $mail->Body    = "
                     <table style='width: 100%; border-collapse: collapse;'>
                         <tr>
