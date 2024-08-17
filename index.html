@@ -51,6 +51,9 @@
               <li><a class="dropdown-item" href="#posgrados">Posgrados</a></li>
             </ul>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ubicacion">Contacto</a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Intranet
@@ -58,14 +61,12 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="https://ferozo.email/" target="_blank"
                   rel="noopener noreferrer">E-Mail</a></li>
-              <li><a class="dropdown-item" href="http://dexor.eastus.cloudapp.azure.com/" target="_blank"
-                  rel="noopener noreferrer">Sistema</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#ubicacion">Contacto</a>
-          </li>
 
+              <li class="nav-item"><a class="nav-link" href="http://dexor.eastus.cloudapp.azure.com/" target="_blank"
+                  rel="noopener noreferrer">Kardex</a>
+            </li>
         </ul>
       </div>
     </div>
@@ -121,44 +122,42 @@
         <h3 class="mb-4 subTitulo" style="color: white;">Dejanos tus datos</h3>
         <div class="row d-flex justify-content-center align-items-center">
           <div class="bg-blue">
-            <form action="enviar_correo.php" method="post">
+            <form action="enviar_correo.php" method="post" class="contactForm">
               <div class="mb-3">
-                <div class="form-floating">
-                  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
-                  <label for="nombre">Nombre</label>
-                </div>
+                  <div class="form-floating">
+                      <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+                      <label for="nombre">Nombre</label>
+                  </div>
               </div>
               <div class="mb-3">
-                <div class="form-floating">
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Correo Electrónico"
-                    required>
-                  <label for="email">Correo Electrónico</label>
-                </div>
+                  <div class="form-floating">
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Correo Electrónico" required>
+                      <label for="email">Correo Electrónico</label>
+                  </div>
               </div>
               <div class="mb-3">
-                <div class="form-floating">
-                  <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required>
-                  <label for="telefono">Teléfono</label>
-                </div>
+                  <div class="form-floating">
+                      <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required maxlength="10" pattern="\d{10}" title="El teléfono debe contener exactamente 10 dígitos numéricos">
+                      <label for="telefono">Teléfono</label>
+                  </div>
               </div>
               <div class="mb-3">
-                <div class="form-floating">
-                  <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje" style="height: 100px;"
-                    required></textarea>
-                  <label for="mensaje">Mensaje</label>
-                </div>
+                  <div class="form-floating">
+                      <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje" style="height: 100px;" required></textarea>
+                      <label for="mensaje">Mensaje</label>
+                  </div>
               </div>
               <div class="form-check my-2">
-                <input class="form-check-input terminosCheckbox" type="checkbox" value="" id="checkboxContacto" data-button-id="submitButtonContacto">
-                <label class="form-check-label" for="checkboxContacto">
-                    <a href="assets/archivos/AvisoDePrivasidadUPX.pdf">Acepto los términos y condiciones.</a>
-                </label>
-            </div>
-            <button type="submit" class="btn btn-posgrado submitButton" id="submitButtonContacto" disabled>
-                Enviar <span class="spinner-border spinner-border-sm ms-2 spinner" role="status" aria-hidden="true" style="display: none;"></span>
-            </button>
-  
-            </form>
+                  <input class="form-check-input terminosCheckbox" type="checkbox" value="" id="checkboxContacto" data-button-id="submitButtonContacto">
+                  <label class="form-check-label" for="checkboxContacto">
+                      <a href="assets/archivos/AvisoDePrivasidadUPX.pdf" target="_blank">Acepto los términos y condiciones.</a>
+                  </label>
+              </div>
+              <button type="submit" class="btn btn-posgrado submitButton" id="submitButtonContacto" disabled>
+                  Enviar <span class="spinner-border spinner-border-sm ms-2 spinner d-none" role="status" aria-hidden="true"></span>
+              </button>
+          </form>
+          
             <div class="row d-flex justify-content-center">
               <div class="col-4">
                 <img src="assets/images/mascota/ikal.png" class="img-fluid" alt="">
@@ -170,8 +169,9 @@
        
       </div>
     </div>
-  </main>
+  </main>  
   <!-- /main -->
+
 
 
   <!-- NOSOTROS VISION MISION -->
@@ -1787,41 +1787,42 @@
                   <h3 class="mb-4 subTitulo">Datos personales</h3>
                   <div class="row d-flex justify-content-center align-items-center">
                     <div class="bg-blue p-3">
-                      <form id="contactForm" action="enviar_correo.php" method="post">
+                      <form action="enviar_correo.php" method="post" class="contactForm">
                         <div class="mb-3">
-                          <div class="form-floating">
-                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
-                            <label for="nombre">Nombre</label>
-                          </div>
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+                                <label for="nombre">Nombre</label>
+                            </div>
                         </div>
                         <div class="mb-3">
-                          <div class="form-floating">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Correo Electrónico" required>
-                            <label for="email">Correo Electrónico</label>
-                          </div>
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Correo Electrónico" required>
+                                <label for="email">Correo Electrónico</label>
+                            </div>
                         </div>
                         <div class="mb-3">
-                          <div class="form-floating">
-                            <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required>
-                            <label for="telefono">Teléfono</label>
-                          </div>
+                            <div class="form-floating">
+                                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required maxlength="10" pattern="\d{10}" title="El teléfono debe contener exactamente 10 dígitos numéricos">
+                                <label for="telefono">Teléfono</label>
+                            </div>
                         </div>
                         <div class="mb-3">
-                          <div class="form-floating">
-                            <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje" style="height: 100px;" required></textarea>
-                            <label for="mensaje">Mensaje</label>
-                          </div>
+                            <div class="form-floating">
+                                <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje" style="height: 100px;" required></textarea>
+                                <label for="mensaje">Mensaje</label>
+                            </div>
                         </div>
                         <div class="form-check my-2">
-                          <input class="form-check-input terminosCheckbox" type="checkbox" value="" id="checkboxModal" data-button-id="submitButtonModal">
-                          <label class="form-check-label" for="checkboxModal">
-                              <a href="assets/archivos/AvisoDePrivasidadUPX.pdf">Acepto los términos y condiciones.</a>
-                          </label>
-                      </div>
-                      <button type="submit" class="btn btn-posgrado submitButton" id="submitButtonModal" disabled>
-                          Enviar <span class="spinner-border spinner-border-sm ms-2 spinner" role="status" aria-hidden="true" style="display: none;"></span>
-                      </button>
-                      </form>
+                            <input class="form-check-input terminosCheckbox" type="checkbox" value="" id="checkboxContacto" data-button-id="submitButtonModal">
+                            <label class="form-check-label" for="checkboxContacto">
+                                <a href="assets/archivos/AvisoDePrivasidadUPX.pdf" target="_blank">Acepto los términos y condiciones.</a>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-posgrado submitButton" id="submitButtonModal" disabled>
+                            Enviar <span class="spinner-border spinner-border-sm ms-2 spinner d-none" role="status" aria-hidden="true"></span>
+                        </button>
+                    </form>
+                    
                     </div>
                   </div>
                 </div>
